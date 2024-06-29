@@ -7,6 +7,11 @@ for (var i = 0; i < menuBtn.length; i++) {
 }
 
 
+document.querySelector('.vid').addEventListener('animationend', function () {
+    this.style.display = 'none';
+});
+
+
 
 let table = new DataTable('#myTable', {
     // order: [[2, 'asc']],
@@ -36,7 +41,7 @@ let table = new DataTable('#myTable', {
 if (window.innerWidth > 1500) {
 
     table.destroy();
-    
+
     table = new DataTable('#myTable', {
         // order: [[2, 'asc']],
         info: false,
