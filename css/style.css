@@ -3,6 +3,7 @@
     padding: 0;
     list-style: none;
     box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
     /* border: 0.1px solid #000; */
 }
 
@@ -43,6 +44,7 @@
 .main-nav a {
     color: #fff;
     text-decoration: none;
+    font-weight: bold;
 }
 
 .main-nav a::before {
@@ -261,6 +263,7 @@ footer p {
     color: #5d6c89;
     text-decoration: none;
     font-size: 1.1em;
+    font-weight: bold;
 }
 
 footer span {
