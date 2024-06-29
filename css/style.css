@@ -1,0 +1,28 @@
+#myTable_wrapper{
+    width: 100%;
+}
+#myTable{
+    width: 100%;
+}
+.dtfc-fixed-left{
+    background: #fff;
+    z-index: 1;
+}
+.container{
+    width: 100%;
+}
+td{
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 0.3em;
+}
+img{
+    width: 100%;
+    height: auto;
+    z-index: 3;
+}
+@media screen and (min-width:768px){
+    #myTable_wrapper{
+        max-width: 100%;
+        margin: auto;
+    }
+}
