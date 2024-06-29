@@ -25,7 +25,11 @@ let table = new DataTable('#myTable', {
     scrollCollapse: true,
     scrollX: true,
     scrollY: 500,
-    columnDefs: [{ orderable: false, targets: 0 },
+    columnDefs: [
+        { orderable: false, targets: 0 },
+        { orderable: false, targets: 1 },
+        { orderable: false, targets: 2 },
+        { orderable: false, targets: 3 },
     ]
 });
 
@@ -50,7 +54,11 @@ if (window.innerWidth > 1500) {
         // scrollCollapse: true,
         // scrollX: true,
         // scrollY: 800,
-        columnDefs: [{ orderable: false, targets: 0 },
+        columnDefs: [
+            { orderable: false, targets: 0 },
+            { orderable: false, targets: 1 },
+            { orderable: false, targets: 2 },
+            { orderable: false, targets: 3 },
         ]
     });
 }
