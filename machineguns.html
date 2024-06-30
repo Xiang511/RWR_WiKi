@@ -67,6 +67,15 @@
             </nav>
         </header>
         <div class="container">
+            <div class="search-group">
+                <div class="multi-search">
+                    <span>Compare: </span>
+                    <input type="text" id="searchitem1" placeholder="ex:m240" class="searchbar">
+                    <input type="text" id="searchitem2" placeholder="ex:pkm" class="searchbar">
+                    <button onclick="multiSearch()">Search</button>
+                    <button onclick="clearSearch()">Clear</button>
+                </div>
+            </div>
             <table class="cell-border hover" id="myTable">
                 <thead>
                     <tr>
@@ -144,7 +153,7 @@
                         <td>
                             <img src="img/machineguns/Hud_imi_negev.webp" alt="">
                         </td>
-                        <td>IMI Negev
+                        <td>IMINegev
                         </td>
                         <td>Light machine gun
                         </td>
@@ -214,7 +223,7 @@
                         <td>
                             <img src="img/machineguns/Hud_stoner_lmg.webp" alt="">
                         </td>
-                        <td>Stoner LMG
+                        <td>StonerLMG
                         </td>
                         <td>Light machine gun
                         </td>
@@ -249,7 +258,7 @@
                         <td>
                             <img src="img/machineguns/Stoner62.webp" alt="">
                         </td>
-                        <td>Stoner 62
+                        <td>Stoner62
                         </td>
                         <td>Light machine gun, full-auto,
                             <p>1.4x zoom
@@ -286,7 +295,7 @@
                         <td>
                             <img src="img/machineguns/Hud_ares_shrike.webp" alt="">
                         </td>
-                        <td>ARES Shrike
+                        <td>ARESShrike
                         </td>
                         <td>Light machine gun,
                             <p>6 round burst / semi-auto
@@ -325,7 +334,7 @@
                         <td>
                             <img src="img/machineguns/Hud_pecheneg_bullpup.webp" alt="">
                         </td>
-                        <td>Pecheneg Bullpup
+                        <td>PechenegBullpup
                         </td>
                         <td>Bullpup machine gun, 1.2x zoom
                         </td>
@@ -360,7 +369,7 @@
                         <td>
                             <img src="img/machineguns/Chainsaw.webp" alt="">
                         </td>
-                        <td>KAC Chain SAW
+                        <td>KACChainSAW
                         </td>
                         <td>Light machine gun, full-auto,
                             <p>suppressed
@@ -434,7 +443,7 @@
                         <td>
                             <img src="img/machineguns/Microgun.webp" alt="">
                         </td>
-                        <td>WB-II Microgun
+                        <td>WBII Microgun
                         </td>
                         <td>Heavy machine gun
                         </td>
@@ -544,7 +553,7 @@
                         <td>
                             <img src="img/machineguns/Hud_ultimax.webp" alt="">
                         </td>
-                        <td>Ultimax 100
+                        <td>Ultimax100
                         </td>
                         <td>Negative recoil machine gun, optional assault rifle mode (AR mode stats in parenthesis)
                         </td>

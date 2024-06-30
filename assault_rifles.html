@@ -68,6 +68,15 @@
             </nav>
         </header>
         <div class="container">
+            <div class="search-group">
+                <div class="multi-search">
+                    <span>Compare: </span>
+                    <input type="text" id="searchitem1" placeholder="ex:m16" class="searchbar">
+                    <input type="text" id="searchitem2" placeholder="ex:g36" class="searchbar">
+                    <button onclick="multiSearch()">Search</button>
+                    <button onclick="clearSearch()">Clear</button>
+                </div>
+            </div>
             <table class="cell-border hover" id="myTable">
                 <thead>
                     <tr>
@@ -258,7 +267,7 @@
                         <td>
                             <img src="img/assault_rifles/Hud_famasg1.webp" alt="">
                         </td>
-                        <td>FAMAS G1
+                        <td>FAMASG1
                         </td>
                         <td>Bullpup assault rifle, 3-round burst
                         </td>
@@ -295,7 +304,7 @@
                         <td>
                             <img src="img/assault_rifles/Hud_sg552.webp" alt="">
                         </td>
-                        <td>SG 552
+                        <td>SG552
                         </td>
                         <td>Assault rifle, semi-auto
                         </td>
@@ -332,7 +341,7 @@
                         <td>
                             <img src="img/assault_rifles/Hud_aks74u.webp" alt="">
                         </td>
-                        <td>AKS-74U
+                        <td>AKS74U
                         </td>
                         <td>Assault rifle, full-auto
                         </td>
@@ -402,7 +411,7 @@
                         <td>
                             <img src="img/assault_rifles/Hud_xm8.webp" alt="">
                         </td>
-                        <td>XM-8
+                        <td>XM8
                         </td>
                         <td>Assault rifle, full-auto
                         </td>
@@ -437,7 +446,7 @@
                         <td>
                             <img src="img/assault_rifles/Hud_aug.webp" alt="">
                         </td>
-                        <td>Steyr AUG
+                        <td>SteyrAUG
                         </td>
                         <td>Bullpup assault rifle, full-auto,
                             <p>1.3x zoom, high-velocity
@@ -474,7 +483,7 @@
                         <td>
                             <img src="img/assault_rifles/Hud_mk47.webp" alt="">
                         </td>
-                        <td>MK47 Mutant
+                        <td>MK47Mutant
                         </td>
                         <td>Silenced assault rifle, full-auto,
                             <p>1.1x scope, high-velocity
@@ -511,7 +520,7 @@
                         <td>
                             <img src="img/assault_rifles/Hud_m16a4_support1.webp" alt="">
                         </td>
-                        <td>M16A4 -
+                        <td>M16A4
                             <p>Shield and Scope
                             </p>
                         </td>
@@ -552,7 +561,7 @@
                         <td>
                             <img src="img/assault_rifles/Hud_fal_bayonet.webp" alt="">
                         </td>
-                        <td>FN FAL
+                        <td>FNFAL
                         </td>
                         <td>Battle rifle, full-auto, optional 3m bayonet
                             <p>(bayonet has less stand/crouch accuracy)
@@ -630,7 +639,7 @@
                         <td>
                             <img src="img/assault_rifles/Hud_tkb059.webp" alt="">
                         </td>
-                        <td>TKB-059
+                        <td>TKB059
                         </td>
                         <td>Assault rifle, full-auto, triple barrel
                         </td>
@@ -667,7 +676,7 @@
                         <td>
                             <img src="img/assault_rifles/Hud_golden_ak47.webp" alt="">
                         </td>
-                        <td>Golden AK47
+                        <td>GoldenAK47
                         </td>
                         <td>Assault rifle, full-auto, shiny
                         </td>
@@ -741,7 +750,7 @@
                         <td>
                             <img src="img/assault_rifles/Hud_ak47_w_gp25.webp" alt="">
                         </td>
-                        <td>AK47 w/ GP25 GL
+                        <td>AK47w/GP25GL
                         </td>
                         <td>Assault rifle, full-auto,
                             <p>alternate single-shot grenade launcher
@@ -788,7 +797,7 @@
                         <td>
                             <img src="img/assault_rifles/Hud_g36_w_ag36.webp" alt="">
                         </td>
-                        <td>G36 w/ AG36 GL
+                        <td>G36w/AG36GL
                         </td>
                         <td>Assault rifle, full-auto,
                             <p>alternate single-shot grenade launcher
@@ -835,7 +844,7 @@
                         <td>
                             <img src="img/assault_rifles/Hud_m16a4_w_m203.webp" alt="">
                         </td>
-                        <td>M16A4 w/ M203 GL
+                        <td>M16A4w/M203GL
                         </td>
                         <td>Assault rifle, full-auto,
                             <p>alternate single-shot grenade launcher
@@ -882,7 +891,7 @@
                         <td>
                             <img src="img/assault_rifles/Hud_ash12.webp" alt="">
                         </td>
-                        <td>ASh-12.7
+                        <td>ASh12.7
                         </td>
                         <td>Assault rifle, full-auto,
                             <p>alternate suppressed flashbang launcher
@@ -923,7 +932,7 @@
                         <td>
                             <img src="img/assault_rifles/Hud_qbz95.webp" alt="">
                         </td>
-                        <td>QBZ-95
+                        <td>QBZ95
                         </td>
                         <td>Assault Rifle, full-auto, underbarrel shotgun (underbarrel stats in parenthesis)
                         </td>
@@ -995,7 +1004,7 @@
                         <td>
                             <img src="img/assault_rifles/Hud_gilboa_dbr.webp" alt="">
                         </td>
-                        <td>Gilboa DBR
+                        <td>GilboaDBR
                         </td>
                         <td>Assault Rifle, semi-auto, double barrel (consumes 2 ammo per shot)
                         </td>
@@ -1030,7 +1039,7 @@
                         <td>
                             <img src="img/assault_rifles/Hud_an94.webp" alt="">
                         </td>
-                        <td>AN-94
+                        <td>AN94
                         </td>
                         <td>Assault Rifle, full-auto, alternate 2-round burst mode (2-round burst stats in parenthesis)
                         </td>
@@ -1101,7 +1110,7 @@
                         <td>
                             <img src="img/assault_rifles/Hud_ots14.webp" alt="">
                         </td>
-                        <td>OTS-14/ GP25 GL
+                        <td>OTS14/GP25GL
                         </td>
                         <td>Bullpup Assault Rifle and grenade launcher, the latter of which has projectile speed of 120,
                             accuracy factor of 0.8, and will 'bounce' on impact, dealing no initial damage, but flying straight
