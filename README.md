@@ -23,9 +23,9 @@ Using a ``` fixed table header ``` makes reading more smooth and efficient.
 ## Todo
 
 - [x] Primary Assault rifles ```2024-06-30```
-- [ ] Supressed Submachineguns
-- [ ] Assault Submachineguns
-- [ ] Primary light, medium, and general purpose machineguns
+- [x] Supressed Submachineguns ```2024-06-30```
+- [x] Assault Submachineguns ```2024-06-30```
+- [x] Primary light, medium, and general purpose machineguns ```2024-06-30```
 - [ ] Primary Shotguns
 - [ ] Primary Snipers and designated marksman rifles
 - [ ] Primary explosives
