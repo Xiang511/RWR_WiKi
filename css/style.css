@@ -16,7 +16,7 @@
     padding: 10px;
     display: flex;
     justify-content: space-between;
-    /* position: sticky; */
+    position: relative;
     top: 0;
     z-index: 999;
 }
