@@ -234,6 +234,15 @@ img {
     z-index: 3;
 }
 
+#myTable thead:nth-child(2) tr{
+    position: sticky;
+    top: 0 ;
+    background: #fff;
+    z-index: 3;
+}
+
+
+
 @media screen and (max-width:640px) {
     #myTable_length,
     #myTable_filter {
