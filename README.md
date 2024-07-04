@@ -20,26 +20,17 @@ Currently supports ```basic sorting``` ,```pagination``` ,and```filtering``` .
 
 Using a ``` fixed table header ``` makes reading more smooth and efficient.
 
+```Comparison tool:``` Now you can easily compare the stats of two guns side-by-side, without affecting the original search function.
+
 ## Todo
 
-- [x] Primary Assault rifles ```2024-06-30```
-- [x] Supressed Submachineguns ```2024-06-30```
-- [x] Assault Submachineguns ```2024-06-30```
-- [x] Primary light, medium, and general purpose machineguns ```2024-06-30```
-- [ ] Primary Shotguns
-- [ ] Primary Snipers and designated marksman rifles
-- [ ] Primary explosives
-- [ ] Primary special
-- [ ] Secondary special
-- [ ] Secondary handguns
-- [ ] Secondary Anti-tank weapons/Anti-personnel mines
-
-
-## Questions?
-Feel free to open an issue.
-
-## Support
-💙 If you like this project, give it a ⭐ and share it with friends!
+- [x] Primary Assault rifles 
+- [x] Supressed Submachineguns 
+- [x] Assault Submachineguns 
+- [x] Primary light, medium, and general purpose machineguns
+- [x] Primary Shotguns 
+- [x] Primary Snipers and designated marksman rifles 
+- [x] Primary explosives 
 
 ## License
 This project is published under MIT License.
