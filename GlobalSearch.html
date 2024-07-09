@@ -1,0 +1,3391 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="pragma" content="no-cache">
+	<meta http-equiv="Cache-Control" content="no-cache, must-revalidate">
+	<meta http-equiv="expires" content="0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RWR Wiki -RWD</title>
+    <link rel="shortcut icon" href="img/Site-favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- Boxicons -->
+    <link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
+
+
+    <!-- jQUERY -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+        integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <!-- jQUERY -->
+
+    <!-- datatables -->
+    <!-- main -->
+    <link href="DataTables/datatables.min.css" rel="stylesheet">
+
+    <script src="DataTables/datatables.min.js"></script>
+
+    <link rel="stylesheet" href="https://cdn.datatables.net/1.13.6/css/jquery.dataTables.min.css">
+    <!-- main -->
+
+    <!-- fixed col -->
+    <link rel="stylesheet" href=https://cdn.datatables.net/fixedcolumns/4.3.0/css/fixedColumns.dataTables.min.css">
+
+	<script src="https://cdn.datatables.net/fixedcolumns/4.3.0/js/dataTables.fixedColumns.min.js"></script>
+    <!-- fixed col -->
+
+    <!-- 表格拖拉 -->
+    <link rel="stylesheet" href="https://cdn.datatables.net/colreorder/1.7.0/css/colReorder.dataTables.min.css">
+
+	<script src="https://cdn.datatables.net/colreorder/1.7.0/js/dataTables.colReorder.min.js"></script>
+    <!-- 表格拖拉 -->
+    <!-- datatables -->
+
+</head>
+
+<body>
+    <div style="flex:1">
+        <div class="vid">
+            <img src="img/Running_with_Rifles_Logo.png" alt="">
+        </div>
+        <input type="checkbox" id="menu-switch">
+        <header class="main-header">
+            <div class="logo">
+                <a href="https://runningwithrifles.fandom.com/wiki/Running_with_Rifles_Wiki" class="brand">
+                    <img src="img/Running_with_Rifles_Logo_Horizontal.png"
+                        style="width: 90%;vertical-align: middle; margin-right: .5em;"
+                        alt=""></a>
+            </div>
+            <label for="menu-switch" class="hb icon">
+                <i class='bx bx-menu open'></i>
+                <i class='bx bx-x close'></i>
+            </label>
+            <nav class="main-nav">
+                <a href="https://xiang511.com/RWR_WiKi/">Home</a>
+                <a href="assault_rifles.html">Assault Rifles</a>
+                <a href="Submachinegun.html">Submachineguns</a>
+                <a href="machineguns.html">Machineguns</a>
+                <a href="Shotguns.html">Shotguns</a>
+                <a href="Snipers.html">Sniper Rifles</a>
+                <a href="explosives.html">Explosives</a>
+                <a href="GlobalSearch.html">GlobalSearch</a>
+            </nav>
+        </header>
+        <div class="container">
+            <div class="search-group">
+                <div class="multi-search">
+                    <span>Compare: </span>
+                    <input type="text" id="searchitem1" placeholder="ex:m16" class="searchbar">
+                    <input type="text" id="searchitem2" placeholder="ex:g36" class="searchbar">
+                    <button onclick="multiSearch()">Search</button>
+                    <button onclick="clearSearch()">Clear</button>
+                </div>
+            </div>
+            <table class="cell-border hover" id="myTable">
+                <thead>
+                    <tr>
+                        <th>Image
+                        </th>
+                        <th>Name
+                        </th>
+                        <th>Type
+                        </th>
+                        <th>Faction
+                        </th>
+                        <th>Price (RP)
+                        </th>
+                        <th>Magazine size
+                        </th>
+                        <th>Fire rate (RPM)
+                        </th>
+                        <th>Accuracy factor
+                        </th>
+                        <th>Recoil
+                        </th>
+                        <th>Recoil recovery
+                        </th>
+                        <th>Kill probability
+                        </th>
+                        <th>Fall-off Start(m)
+                        </th>
+                        <th>Max range(m)
+                        </th>
+                        <th>Bullet Speed(m/s)
+                        </th>
+                        <th>Speed mod(%)
+                        </th>
+                        <th>Commonness
+                        </th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>
+                            <img src="img/assault_rifles/Hud_m16a4.webp" alt="">
+                        </td>
+                        <td>M16A4
+                        </td>
+                        <td>Assault rifle, full-auto
+                        </td>
+                        <td style="background-color:#AADDAA;color:#0b1b0b;">Greenbelts<b>/</b>
+                            <p>Unlockable
+                            </p>
+                        </td>
+                        <td style="text-align:right;">2
+                        </td>
+                        <td style="text-align:right;">30
+                        </td>
+                        <td style="text-align:right;">531
+                        </td>
+                        <td style="text-align:right;">1
+                        </td>
+                        <td style="text-align:right;">0.34
+                        </td>
+                        <td style="text-align:right;">1.4
+                        </td>
+                        <td style="text-align:right;">0.5
+                        </td>
+                        <td style="text-align:right;">34
+                        </td>
+                        <td style="text-align:right;">67
+                        </td>
+                        <td style="text-align:right;">100
+                        </td>
+                        <td style="text-align:right;">-3.6
+                        </td>
+                        <td style="text-align:right;">0.2 (70%)
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <img src="img/assault_rifles/Hud_g36.webp" alt="">
+                        </td>
+                        <td>G36
+                        </td>
+                        <td>Assault rifle, full-auto
+                        </td>
+                        <td style="background-color:#CCCCCC;color:#1b1b1b;">Graycollars<b>/</b>
+                            <p>Unlockable
+                            </p>
+                        </td>
+                        <td style="text-align:right;">2
+                        </td>
+                        <td style="text-align:right;">30
+                        </td>
+                        <td style="text-align:right;">545
+                        </td>
+                        <td style="text-align:right;">1
+                        </td>
+                        <td style="text-align:right;">0.36
+                        </td>
+                        <td style="text-align:right;">1.38
+                        </td>
+                        <td style="text-align:right;">0.5
+                        </td>
+                        <td style="text-align:right;">35
+                        </td>
+                        <td style="text-align:right;">70
+                        </td>
+                        <td style="text-align:right;">100
+                        </td>
+                        <td style="text-align:right;">-1.8
+                        </td>
+                        <td style="text-align:right;">0.2 (70%)
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <img src="img/assault_rifles/Hud_ak47.webp" alt="">
+                        </td>
+                        <td>AK47
+                        </td>
+                        <td>Assault rifle, full-auto
+                        </td>
+                        <td style="background-color:#f0d098;color:#332307;">Brownpants<b>/</b>
+                            <p>Unlockable
+                            </p>
+                        </td>
+                        <td style="text-align:right;">2
+                        </td>
+                        <td style="text-align:right;">30
+                        </td>
+                        <td style="text-align:right;">488
+                        </td>
+                        <td style="text-align:right;">1
+                        </td>
+                        <td style="text-align:right;">0.4
+                        </td>
+                        <td style="text-align:right;">1.2
+                        </td>
+                        <td style="text-align:right;">0.55
+                        </td>
+                        <td style="text-align:right;">33
+                        </td>
+                        <td style="text-align:right;">68
+                        </td>
+                        <td style="text-align:right;">100
+                        </td>
+                        <td style="text-align:right;">-2
+                        </td>
+                        <td style="text-align:right;">0.2 (70%)
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <img src="img/assault_rifles/Hud_l85a2.webp" alt="">
+                        </td>
+                        <td>L85A2
+                        </td>
+                        <td>Bullpup assault rifle, 3-round burst
+                        </td>
+                        <td style="background-color:#AADDAA;color:#0b1b0b;">Greenbelts<b>/</b>
+                            <p>Unlockable
+                            </p>
+                        </td>
+                        <td style="text-align:right;">8
+                        </td>
+                        <td style="text-align:right;">30
+                        </td>
+                        <td style="text-align:right;">632
+                        </td>
+                        <td style="text-align:right;">1
+                        </td>
+                        <td style="text-align:right;">0.35
+                        </td>
+                        <td style="text-align:right;">1.4
+                        </td>
+                        <td style="text-align:right;">0.55
+                        </td>
+                        <td style="text-align:right;">36
+                        </td>
+                        <td style="text-align:right;">66
+                        </td>
+                        <td style="text-align:right;">100
+                        </td>
+                        <td style="text-align:right;">-3
+                        </td>
+                        <td style="text-align:right;">0.0003 (0.07%)
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <img src="img/assault_rifles/Hud_famasg1.webp" alt="">
+                        </td>
+                        <td>FAMASG1
+                        </td>
+                        <td>Bullpup assault rifle, 3-round burst
+                        </td>
+                        <td style="background-color:#CCCCCC;color:#1b1b1b;">Graycollars<b>/</b>
+                            <p>Unlockable
+                            </p>
+                        </td>
+                        <td style="text-align:right;">8
+                        </td>
+                        <td style="text-align:right;">25
+                        </td>
+                        <td style="text-align:right;">750
+                        </td>
+                        <td style="text-align:right;">1
+                        </td>
+                        <td style="text-align:right;">0.32
+                        </td>
+                        <td style="text-align:right;">1.4
+                        </td>
+                        <td style="text-align:right;">0.55
+                        </td>
+                        <td style="text-align:right;">37
+                        </td>
+                        <td style="text-align:right;">65
+                        </td>
+                        <td style="text-align:right;">100
+                        </td>
+                        <td style="text-align:right;">-2
+                        </td>
+                        <td style="text-align:right;">0.0003 (0.07%)
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <img src="img/assault_rifles/Hud_sg552.webp" alt="">
+                        </td>
+                        <td>SG552
+                        </td>
+                        <td>Assault rifle, semi-auto
+                        </td>
+                        <td style="background-color:#f0d098;color:#332307;">Brownpants<b>/</b>
+                            <p>Unlockable
+                            </p>
+                        </td>
+                        <td style="text-align:right;">10
+                        </td>
+                        <td style="text-align:right;">30
+                        </td>
+                        <td style="text-align:right;">600
+                        </td>
+                        <td style="text-align:right;">1
+                        </td>
+                        <td style="text-align:right;">0.32
+                        </td>
+                        <td style="text-align:right;">1.4
+                        </td>
+                        <td style="text-align:right;">0.57
+                        </td>
+                        <td style="text-align:right;">33
+                        </td>
+                        <td style="text-align:right;">68
+                        </td>
+                        <td style="text-align:right;">100
+                        </td>
+                        <td style="text-align:right;">0
+                        </td>
+                        <td style="text-align:right;">0.0003 (0.07%)
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <img src="img/assault_rifles/Hud_aks74u.webp" alt="">
+                        </td>
+                        <td>AKS74U
+                        </td>
+                        <td>Assault rifle, full-auto
+                        </td>
+                        <td style="background-color:#ADD8E6;color:#0c2026;">Rare<b>/</b>Ice Cream Van (200 rp)
+                        </td>
+                        <td style="text-align:right;">80
+                        </td>
+                        <td style="text-align:right;">30
+                        </td>
+                        <td style="text-align:right;">612
+                        </td>
+                        <td style="text-align:right;">1
+                        </td>
+                        <td style="text-align:right;">0.6
+                        </td>
+                        <td style="text-align:right;">2.5
+                        </td>
+                        <td style="text-align:right;">0.6
+                        </td>
+                        <td style="text-align:right;">38
+                        </td>
+                        <td style="text-align:right;">52
+                        </td>
+                        <td style="text-align:right;">100
+                        </td>
+                        <td style="text-align:right;">0
+                        </td>
+                        <td style="text-align:right;">0.0005
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <img src="img/assault_rifles/Hud_f2000.webp" alt="">
+                        </td>
+                        <td>F2000
+                        </td>
+                        <td>Bullpup assault rifle, full-auto
+                        </td>
+                        <td style="background-color:#ADD8E6;color:#0c2026;">Rare<b>/</b>Ice Cream Van (200 rp)
+                        </td>
+                        <td style="text-align:right;">80
+                        </td>
+                        <td style="text-align:right;">30
+                        </td>
+                        <td style="text-align:right;">545
+                        </td>
+                        <td style="text-align:right;">1
+                        </td>
+                        <td style="text-align:right;">0.25
+                        </td>
+                        <td style="text-align:right;">0.8
+                        </td>
+                        <td style="text-align:right;">0.58
+                        </td>
+                        <td style="text-align:right;">45
+                        </td>
+                        <td style="text-align:right;">75
+                        </td>
+                        <td style="text-align:right;">100
+                        </td>
+                        <td style="text-align:right;">-4
+                        </td>
+                        <td style="text-align:right;">0.0006
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <img src="img/assault_rifles/Hud_xm8.webp" alt="">
+                        </td>
+                        <td>XM8
+                        </td>
+                        <td>Assault rifle, full-auto
+                        </td>
+                        <td style="background-color:#ADD8E6;color:#0c2026;">Rare<b>/</b>Ice Cream Van (200 rp)
+                        </td>
+                        <td style="text-align:right;">80
+                        </td>
+                        <td style="text-align:right;">30
+                        </td>
+                        <td style="text-align:right;">545
+                        </td>
+                        <td style="text-align:right;">1
+                        </td>
+                        <td style="text-align:right;">0.28
+                        </td>
+                        <td style="text-align:right;">1.0
+                        </td>
+                        <td style="text-align:right;">0.55
+                        </td>
+                        <td style="text-align:right;">42
+                        </td>
+                        <td style="text-align:right;">75
+                        </td>
+                        <td style="text-align:right;">100
+                        </td>
+                        <td style="text-align:right;">-4
+                        </td>
+                        <td style="text-align:right;">0.0004
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <img src="img/assault_rifles/Hud_aug.webp" alt="">
+                        </td>
+                        <td>SteyrAUG
+                        </td>
+                        <td>Bullpup assault rifle, full-auto,
+                            <p>1.3x zoom, high-velocity
+                            </p>
+                        </td>
+                        <td style="background-color:#ADD8E6;color:#0c2026;">Rare
+                        </td>
+                        <td style="text-align:right;">180
+                        </td>
+                        <td style="text-align:right;">42
+                        </td>
+                        <td style="text-align:right;">488
+                        </td>
+                        <td style="text-align:right;">1
+                        </td>
+                        <td style="text-align:right;">0.36
+                        </td>
+                        <td style="text-align:right;">1.0
+                        </td>
+                        <td style="text-align:right;">0.55
+                        </td>
+                        <td style="text-align:right;">54
+                        </td>
+                        <td style="text-align:right;">90
+                        </td>
+                        <td style="text-align:right;">120
+                        </td>
+                        <td style="text-align:right;">-4
+                        </td>
+                        <td style="text-align:right;">0.0002
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <img src="img/assault_rifles/Hud_mk47.webp" alt="">
+                        </td>
+                        <td>MK47Mutant
+                        </td>
+                        <td>Silenced assault rifle, full-auto,
+                            <p>1.1x scope, high-velocity
+                            </p>
+                        </td>
+                        <td style="background-color:#ADD8E6;color:#0c2026;">Rare
+                        </td>
+                        <td style="text-align:right;">470
+                        </td>
+                        <td style="text-align:right;">30
+                        </td>
+                        <td style="text-align:right;">612
+                        </td>
+                        <td style="text-align:right;">1
+                        </td>
+                        <td style="text-align:right;">0.42
+                        </td>
+                        <td style="text-align:right;">1.8
+                        </td>
+                        <td style="text-align:right;">0.58
+                        </td>
+                        <td style="text-align:right;">39.6
+                        </td>
+                        <td style="text-align:right;">63.8
+                        </td>
+                        <td style="text-align:right;">110
+                        </td>
+                        <td style="text-align:right;">-4
+                        </td>
+                        <td style="text-align:right;">15% chance to drop when killing an Off-Duty Retired Veteran with melee
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <img src="img/assault_rifles/Hud_m16a4_support1.webp" alt="">
+                        </td>
+                        <td>M16A4
+                            <p>Shield and Scope
+                            </p>
+                        </td>
+                        <td>Assault rifle, full-auto, fire while crouch,
+                            <p>small ballistic shield, 1.2x scope
+                            </p>
+                        </td>
+                        <td style="background-color:#f2caea;"><a href="https://runningwithrifles.fandom.com/wiki/Boxes" title="Boxes">Gift Box</a>
+                        </td>
+                        <td style="text-align:right;">90
+                        </td>
+                        <td style="text-align:right;">100
+                        </td>
+                        <td style="text-align:right;">531
+                        </td>
+                        <td style="text-align:right;">1
+                        </td>
+                        <td style="text-align:right;">0.3
+                        </td>
+                        <td style="text-align:right;">1.4
+                        </td>
+                        <td style="text-align:right;">0.5
+                        </td>
+                        <td style="text-align:right;">34
+                        </td>
+                        <td style="text-align:right;">67
+                        </td>
+                        <td style="text-align:right;">100
+                        </td>
+                        <td style="text-align:right;">-8
+                        </td>
+                        <td style="text-align:right;">0
+                            <p>(<a href="https://runningwithrifles.fandom.com/wiki/Boxes" title="Boxes">Community Box 2</a>)
+                            </p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <img src="img/assault_rifles/Hud_fal_bayonet.webp" alt="">
+                        </td>
+                        <td>FNFAL
+                        </td>
+                        <td>Battle rifle, full-auto, optional 3m bayonet
+                            <p>(bayonet has less stand/crouch accuracy)
+                            </p>
+                        </td>
+                        <td style="background-color:#f2caea;"><a href="https://runningwithrifles.fandom.com/wiki/Boxes" title="Boxes">Gift Box</a>
+                        </td>
+                        <td style="text-align:right;">420
+                        </td>
+                        <td style="text-align:right;">20
+                        </td>
+                        <td style="text-align:right;">531
+                        </td>
+                        <td style="text-align:right;">1
+                        </td>
+                        <td style="text-align:right;">0.4
+                        </td>
+                        <td style="text-align:right;">1.1
+                        </td>
+                        <td style="text-align:right;">0.58
+                        </td>
+                        <td style="text-align:right;">42
+                        </td>
+                        <td style="text-align:right;">75
+                        </td>
+                        <td style="text-align:right;">100
+                        </td>
+                        <td style="text-align:right;">-3.6
+                        </td>
+                        <td style="text-align:right;">0
+                            <p>(<a href="https://runningwithrifles.fandom.com/wiki/Boxes" title="Boxes">Community Box 2</a>)
+                            </p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <img src="img/assault_rifles/Hud_g11.webp" alt="">
+                        </td>
+                        <td>G11
+                        </td>
+                        <td>Assault rifle, optional 3-round burst,
+                            <p>1.2x zoom (non-burst stats in parenthesis)
+                            </p>
+                        </td>
+                        <td style="background-color:#f2caea;"><a href="https://runningwithrifles.fandom.com/wiki/Boxes" title="Boxes">Gift Box</a>
+                        </td>
+                        <td style="text-align:right;">440
+                        </td>
+                        <td style="text-align:right;">45
+                        </td>
+                        <td style="text-align:right;">3000 (462)
+                        </td>
+                        <td style="text-align:right;">1
+                        </td>
+                        <td style="text-align:right;">0.10 (0.3)
+                        </td>
+                        <td style="text-align:right;">0.4 (1.3)
+                        </td>
+                        <td style="text-align:right;">0.53
+                        </td>
+                        <td style="text-align:right;">40
+                        </td>
+                        <td style="text-align:right;">64
+                        </td>
+                        <td style="text-align:right;">100
+                        </td>
+                        <td style="text-align:right;">-2
+                        </td>
+                        <td style="text-align:right;">0
+                            <p>(<a href="https://runningwithrifles.fandom.com/wiki/Boxes" title="Boxes">Community Box 4</a>)
+                            </p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <img src="img/assault_rifles/Hud_tkb059.webp" alt="">
+                        </td>
+                        <td>TKB059
+                        </td>
+                        <td>Assault rifle, full-auto, triple barrel
+                        </td>
+                        <td style="background-color:#f2caea;"><a href="https://runningwithrifles.fandom.com/wiki/Boxes" title="Boxes">Gift Box</a>
+                        </td>
+                        <td style="text-align:right;">630
+                        </td>
+                        <td style="text-align:right;">30
+                        </td>
+                        <td style="text-align:right;">488
+                        </td>
+                        <td style="text-align:right;">0.96
+                        </td>
+                        <td style="text-align:right;">0.5
+                        </td>
+                        <td style="text-align:right;">1.1
+                        </td>
+                        <td style="text-align:right;">0.5x3
+                        </td>
+                        <td style="text-align:right;">25
+                        </td>
+                        <td style="text-align:right;">58
+                        </td>
+                        <td style="text-align:right;">100
+                        </td>
+                        <td style="text-align:right;">-3
+                        </td>
+                        <td style="text-align:right;">0
+                            <p>(<a href="https://runningwithrifles.fandom.com/wiki/Boxes" title="Boxes">Community Box 4</a>)
+                            </p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <img src="img/assault_rifles/Hud_golden_ak47.webp" alt="">
+                        </td>
+                        <td>GoldenAK47
+                        </td>
+                        <td>Assault rifle, full-auto, shiny
+                        </td>
+                        <td style="background-color:#f2caea;"><a href="https://runningwithrifles.fandom.com/wiki/Boxes" title="Boxes">Gift Box</a>
+                        </td>
+                        <td style="text-align:right;">3000
+                        </td>
+                        <td style="text-align:right;">30
+                        </td>
+                        <td style="text-align:right;">488
+                        </td>
+                        <td style="text-align:right;">1
+                        </td>
+                        <td style="text-align:right;">0.4
+                        </td>
+                        <td style="text-align:right;">1.2
+                        </td>
+                        <td style="text-align:right;">0.55 (50% chance to deal double damage on hit)
+                        </td>
+                        <td style="text-align:right;">36
+                        </td>
+                        <td style="text-align:right;">75
+                        </td>
+                        <td style="text-align:right;">110
+                        </td>
+                        <td style="text-align:right;">-10
+                        </td>
+                        <td style="text-align:right;">0
+                            <p>(<a href="https://runningwithrifles.fandom.com/wiki/Boxes" title="Boxes">Community Box 4</a>)
+                            </p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <img src="img/assault_rifles/Hud_p416.webp" alt="">
+                        </td>
+                        <td>P416
+                        </td>
+                        <td>Silenced assault rifle, 1.1x scope, full-auto
+                        </td>
+                        <td style="background-color:#f2caea;"><a href="https://runningwithrifles.fandom.com/wiki/Boxes" title="Boxes">Gift Box</a>
+                        </td>
+                        <td style="text-align:right;">416
+                        </td>
+                        <td style="text-align:right;">30
+                        </td>
+                        <td style="text-align:right;">531
+                        </td>
+                        <td style="text-align:right;">1
+                        </td>
+                        <td style="text-align:right;">0.4
+                        </td>
+                        <td style="text-align:right;">1.2
+                        </td>
+                        <td style="text-align:right;">0.52
+                        </td>
+                        <td style="text-align:right;">30
+                        </td>
+                        <td style="text-align:right;">62
+                        </td>
+                        <td style="text-align:right;">100
+                        </td>
+                        <td style="text-align:right;">-4
+                        </td>
+                        <td style="text-align:right;">0
+                            <p>(<a href="https://runningwithrifles.fandom.com/wiki/Boxes" title="Boxes">Community Box 5</a>)
+                            </p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <img src="img/assault_rifles/Hud_ak47_w_gp25.webp" alt="">
+                        </td>
+                        <td>AK47w/GP25GL
+                        </td>
+                        <td>Assault rifle, full-auto,
+                            <p>alternate single-shot grenade launcher
+                            </p>
+                            <p>10% drop chance from Ranger
+                            </p>
+                            <p>(GL functions identically to the M79)
+                            </p>
+                        </td>
+                        <td style="background-color:#f0d098;color:#332307;">Brownpants<b>/</b><a href="https://runningwithrifles.fandom.com/wiki/Boxes"
+                                title="Boxes">Gift Box</a>
+                        </td>
+                        <td style="text-align:right;">250
+                        </td>
+                        <td style="text-align:right;">30
+                        </td>
+                        <td style="text-align:right;">488
+                        </td>
+                        <td style="text-align:right;">0.95
+                        </td>
+                        <td style="text-align:right;">.35
+                        </td>
+                        <td style="text-align:right;">1.2
+                        </td>
+                        <td style="text-align:right;">0.55
+                        </td>
+                        <td style="text-align:right;">33
+                        </td>
+                        <td style="text-align:right;">68
+                        </td>
+                        <td style="text-align:right;">100
+                        </td>
+                        <td style="text-align:right;">-12
+                        </td>
+                        <td style="text-align:right;">0
+                            <p>(<a href="https://runningwithrifles.fandom.com/wiki/Boxes" title="Boxes">Community Box 6</a>)
+                            </p>
+                            <p><br />
+                                0.00001
+                            </p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <img src="img/assault_rifles/Hud_g36_w_ag36.webp" alt="">
+                        </td>
+                        <td>G36w/AG36GL
+                        </td>
+                        <td>Assault rifle, full-auto,
+                            <p>alternate single-shot grenade launcher
+                            </p>
+                            <p>10% drop chance from Ranger
+                            </p>
+                            <p>(GL functions identically to the M79)
+                            </p>
+                        </td>
+                        <td style="background-color:#CCCCCC;color:#1b1b1b;">Graycollar<b>/</b><a href="https://runningwithrifles.fandom.com/wiki/Boxes"
+                                title="Boxes">Gift Box</a>
+                        </td>
+                        <td style="text-align:right;">250
+                        </td>
+                        <td style="text-align:right;">30
+                        </td>
+                        <td style="text-align:right;">545
+                        </td>
+                        <td style="text-align:right;">0.95
+                        </td>
+                        <td style="text-align:right;">0.31
+                        </td>
+                        <td style="text-align:right;">1.38
+                        </td>
+                        <td style="text-align:right;">0.5
+                        </td>
+                        <td style="text-align:right;">35
+                        </td>
+                        <td style="text-align:right;">70
+                        </td>
+                        <td style="text-align:right;">100
+                        </td>
+                        <td style="text-align:right;">-11.8
+                        </td>
+                        <td style="text-align:right;">0
+                            <p>(<a href="https://runningwithrifles.fandom.com/wiki/Boxes" title="Boxes">Community Box 6</a>)
+                            </p>
+                            <p><br />
+                                0.00001
+                            </p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <img src="img/assault_rifles/Hud_m16a4_w_m203.webp" alt="">
+                        </td>
+                        <td>M16A4w/M203GL
+                        </td>
+                        <td>Assault rifle, full-auto,
+                            <p>alternate single-shot grenade launcher
+                            </p>
+                            <p>10% drop chance from Ranger
+                            </p>
+                            <p>(GL functions identically to the M79)
+                            </p>
+                        </td>
+                        <td style="background-color:#AADDAA;color:#0b1b0b;">Greenbelt<b>/</b><a href="https://runningwithrifles.fandom.com/wiki/Boxes"
+                                title="Boxes">Gift Box</a>
+                        </td>
+                        <td style="text-align:right;">250
+                        </td>
+                        <td style="text-align:right;">30
+                        </td>
+                        <td style="text-align:right;">531
+                        </td>
+                        <td style="text-align:right;">0.95
+                        </td>
+                        <td style="text-align:right;">0.29
+                        </td>
+                        <td style="text-align:right;">1.4
+                        </td>
+                        <td style="text-align:right;">0.5
+                        </td>
+                        <td style="text-align:right;">34
+                        </td>
+                        <td style="text-align:right;">67
+                        </td>
+                        <td style="text-align:right;">100
+                        </td>
+                        <td style="text-align:right;">-13.6
+                        </td>
+                        <td style="text-align:right;">0
+                            <p>(<a href="https://runningwithrifles.fandom.com/wiki/Boxes" title="Boxes">Community Box 6</a>)
+                            </p>
+                            <p><br />
+                                0.00001
+                            </p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <img src="img/assault_rifles/Hud_ash12.webp" alt="">
+                        </td>
+                        <td>ASh12.7
+                        </td>
+                        <td>Assault rifle, full-auto,
+                            <p>alternate suppressed flashbang launcher
+                            </p>
+                            <p>(3.5m radius stun, stats in parenthesis)
+                            </p>
+                        </td>
+                        <td style="background-color:#f2caea;"><a href="https://runningwithrifles.fandom.com/wiki/Boxes" title="Boxes">Gift Box</a>
+                        </td>
+                        <td style="text-align:right;">721
+                        </td>
+                        <td style="text-align:right;">20 (3)
+                        </td>
+                        <td style="text-align:right;">545 (120)
+                        </td>
+                        <td style="text-align:right;">1 (0.9)
+                        </td>
+                        <td style="text-align:right;">2.0 (1.5)
+                        </td>
+                        <td style="text-align:right;">1.5 (0.5)
+                        </td>
+                        <td style="text-align:right;">0.75
+                        </td>
+                        <td style="text-align:right;">40
+                        </td>
+                        <td style="text-align:right;">60
+                        </td>
+                        <td style="text-align:right;">100 (60)
+                        </td>
+                        <td style="text-align:right;">-10
+                        </td>
+                        <td style="text-align:right;">0
+                            <p>(<a href="https://runningwithrifles.fandom.com/wiki/Boxes" title="Boxes">Community Box 6</a>)
+                            </p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <img src="img/assault_rifles/Hud_qbz95.webp" alt="">
+                        </td>
+                        <td>QBZ95
+                        </td>
+                        <td>Assault Rifle, full-auto, underbarrel shotgun (underbarrel stats in parenthesis)
+                        </td>
+                        <td style="background-color:#f2caea;"><a href="https://runningwithrifles.fandom.com/wiki/Boxes" title="Boxes">Gift Box</a>
+                        </td>
+                        <td style="text-align:right;">280
+                        </td>
+                        <td style="text-align:right;">30 (4)
+                        </td>
+                        <td style="text-align:right;">500 (333)
+                        </td>
+                        <td style="text-align:right;">0.95 (0.75)
+                        </td>
+                        <td style="text-align:right;">0.42 (1.3)
+                        </td>
+                        <td style="text-align:right;">1.3 (0.8)
+                        </td>
+                        <td style="text-align:right;">0.53 (0.62x4)
+                        </td>
+                        <td style="text-align:right;">35.2 (19.6)
+                        </td>
+                        <td style="text-align:right;">59.9 (29.8)
+                        </td>
+                        <td style="text-align:right;">95 (85)
+                        </td>
+                        <td style="text-align:right;">-8
+                        </td>
+                        <td style="text-align:right;">0 (Found in <a href="https://runningwithrifles.fandom.com/wiki/Boxes" title="Boxes">Community Box 3</a> and
+                            Pumpkin Box only)
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <img src="img/assault_rifles/Hud_g36_w_ag36.webp" alt="">
+                        </td>
+                        <td>G3A3
+                        </td>
+                        <td>Assault Rifle, full-auto, alternate semi-auto mode w/ 1.35x scope (semi-auto stats in parenthesis)
+                        </td>
+                        <td style="background-color:#f2caea;"><a href="https://runningwithrifles.fandom.com/wiki/Boxes" title="Boxes">Gift Box</a>
+                        </td>
+                        <td style="text-align:right;">490
+                        </td>
+                        <td style="text-align:right;">20
+                        </td>
+                        <td style="text-align:right;">500 (300)
+                        </td>
+                        <td style="text-align:right;">1
+                        </td>
+                        <td style="text-align:right;">0.5 (0.6)
+                        </td>
+                        <td style="text-align:right;">1.8
+                        </td>
+                        <td style="text-align:right;">0.6
+                        </td>
+                        <td style="text-align:right;">40.3
+                        </td>
+                        <td style="text-align:right;">89.7
+                        </td>
+                        <td style="text-align:right;">115
+                        </td>
+                        <td style="text-align:right;">-4
+                        </td>
+                        <td style="text-align:right;">0 (Found in <a href="https://runningwithrifles.fandom.com/wiki/Boxes" title="Boxes">Community Box 1</a> and
+                            Pumpkin Box only)
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <img src="img/assault_rifles/Hud_gilboa_dbr.webp" alt="">
+                        </td>
+                        <td>GilboaDBR
+                        </td>
+                        <td>Assault Rifle, semi-auto, double barrel (consumes 2 ammo per shot)
+                        </td>
+                        <td style="background-color:#f2caea;"><a href="https://runningwithrifles.fandom.com/wiki/Boxes" title="Boxes">Gift Box</a>
+                        </td>
+                        <td style="text-align:right;">150
+                        </td>
+                        <td style="text-align:right;">60
+                        </td>
+                        <td style="text-align:right;">3000
+                        </td>
+                        <td style="text-align:right;">1
+                        </td>
+                        <td style="text-align:right;">0.27
+                        </td>
+                        <td style="text-align:right;">1.2
+                        </td>
+                        <td style="text-align:right;">0.5
+                        </td>
+                        <td style="text-align:right;">38
+                        </td>
+                        <td style="text-align:right;">52
+                        </td>
+                        <td style="text-align:right;">100
+                        </td>
+                        <td style="text-align:right;">-5
+                        </td>
+                        <td style="text-align:right;">0 (<a href="https://runningwithrifles.fandom.com/wiki/Boxes" title="Boxes">Community Box 7</a>)
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <img src="img/assault_rifles/Hud_an94.webp" alt="">
+                        </td>
+                        <td>AN94
+                        </td>
+                        <td>Assault Rifle, full-auto, alternate 2-round burst mode (2-round burst stats in parenthesis)
+                        </td>
+                        <td style="background-color:#f2caea;"><a href="https://runningwithrifles.fandom.com/wiki/Boxes" title="Boxes">Gift Box</a>
+                        </td>
+                        <td style="text-align:right;">250
+                        </td>
+                        <td style="text-align:right;">45
+                        </td>
+                        <td style="text-align:right;">588 (1714)
+                        </td>
+                        <td style="text-align:right;">1
+                        </td>
+                        <td style="text-align:right;">0.35 (0.15)
+                        </td>
+                        <td style="text-align:right;">1.34 (0.6)
+                        </td>
+                        <td style="text-align:right;">0.5
+                        </td>
+                        <td style="text-align:right;">32 (38.4)
+                        </td>
+                        <td style="text-align:right;">69 (82.8)
+                        </td>
+                        <td style="text-align:right;">100 (120)
+                        </td>
+                        <td style="text-align:right;">-3.2
+                        </td>
+                        <td style="text-align:right;">0 (<a href="https://runningwithrifles.fandom.com/wiki/Boxes" title="Boxes">Community Box 7</a>)
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <img src="img/assault_rifles/Hud_ar15.webp" alt="">
+                        </td>
+                        <td>AR15
+                        </td>
+                        <td>Assault Rifle, full-auto, optional thermal sight that functions differently depending on time of
+                            day, has a 1.1x (0.9x thermal day) [1.3x thermal night] scope
+                        </td>
+                        <td style="background-color:#f2caea;"><a href="https://runningwithrifles.fandom.com/wiki/Boxes" title="Boxes">Gift Box</a>
+                        </td>
+                        <td style="text-align:right;">365
+                        </td>
+                        <td style="text-align:right;">30
+                        </td>
+                        <td style="text-align:right;">531
+                        </td>
+                        <td style="text-align:right;">1.0 (0.85) [1.1]
+                        </td>
+                        <td style="text-align:right;">0.36
+                        </td>
+                        <td style="text-align:right;">1.38
+                        </td>
+                        <td style="text-align:right;">0.55
+                        </td>
+                        <td style="text-align:right;">34
+                        </td>
+                        <td style="text-align:right;">67
+                        </td>
+                        <td style="text-align:right;">100
+                        </td>
+                        <td style="text-align:right;">-3.6
+                        </td>
+                        <td style="text-align:right;">0 (<a href="https://runningwithrifles.fandom.com/wiki/Boxes" title="Boxes">Cooler Box 1</a>)
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <img src="img/assault_rifles/Hud_ots14.webp" alt="">
+                        </td>
+                        <td>OTS14/GP25GL
+                        </td>
+                        <td>Bullpup Assault Rifle and grenade launcher, the latter of which has projectile speed of 120,
+                            accuracy factor of 0.8, and will 'bounce' on impact, dealing no initial damage, but flying straight
+                            up for 0.2 seconds and then detonating for 45 damage
+                        </td>
+                        <td style="background-color:#f2caea;"><a href="https://runningwithrifles.fandom.com/wiki/Boxes" title="Boxes">Gift Box</a>
+                        </td>
+                        <td style="text-align:right;">265
+                        </td>
+                        <td style="text-align:right;">30
+                        </td>
+                        <td style="text-align:right;">750
+                        </td>
+                        <td style="text-align:right;">1.0
+                        </td>
+                        <td style="text-align:right;">0.6
+                        </td>
+                        <td style="text-align:right;">3.0
+                        </td>
+                        <td style="text-align:right;">0.6
+                        </td>
+                        <td style="text-align:right;">38
+                        </td>
+                        <td style="text-align:right;">52
+                        </td>
+                        <td style="text-align:right;">100
+                        </td>
+                        <td style="text-align:right;">-8
+                        </td>
+                        <td style="text-align:right;">0 (<a href="https://runningwithrifles.fandom.com/wiki/Boxes" title="Boxes">Cooler Box 2</a>)
+                        </td>
+                    </tr>
+                    <!--  -->
+
+                    <tr>
+                        <td>
+                            <img src="img/machineguns/Hud_m240.webp" alt="">
+                        </td>
+                        <td>M240
+                        </td>
+                        <td>Medium machine gun
+                        </td>
+                        <td style="background-color:#AADDAA;color:#0b1b0b;">Greenbelts<b>/</b> Unlockable
+                        </td>
+                        <td style="text-align:right;">2
+                        </td>
+                        <td style="text-align:right;">100
+                        </td>
+                        <td style="text-align:right;">723
+                        </td>
+                        <td style="text-align:right;">0.62
+                        </td>
+                        <td style="text-align:right;">0.8
+                        </td>
+                        <td style="text-align:right;">0.8
+                        </td>
+                        <td style="text-align:right;">0.67
+                        </td>
+                        <td style="text-align:right;">35
+                        </td>
+                        <td style="text-align:right;">70
+                        </td>
+                        <td style="text-align:right;">100
+                        </td>
+                        <td style="text-align:right;">-10
+                        </td>
+                        <td style="text-align:right;">0.05 (16.6%)
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <img src="img/machineguns/Hud_imi_negev.webp" alt="">
+                        </td>
+                        <td>IMINegev
+                        </td>
+                        <td>Light machine gun
+                        </td>
+                        <td style="background-color:#CCCCCC;color:#1b1b1b;">Graycollars<b>/</b> Unlockable
+                        </td>
+                        <td style="text-align:right;">2
+                        </td>
+                        <td style="text-align:right;">100
+                        </td>
+                        <td style="text-align:right;">779
+                        </td>
+                        <td style="text-align:right;">0.63
+                        </td>
+                        <td style="text-align:right;">0.8
+                        </td>
+                        <td style="text-align:right;">0.8
+                        </td>
+                        <td style="text-align:right;">0.65
+                        </td>
+                        <td style="text-align:right;">45
+                        </td>
+                        <td style="text-align:right;">78
+                        </td>
+                        <td style="text-align:right;">110
+                        </td>
+                        <td style="text-align:right;">-8
+                        </td>
+                        <td style="text-align:right;">0.05 (16.6%)
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <img src="img/machineguns/Hud_pkm.webp" alt="">
+                        </td>
+                        <td>PKM
+                        </td>
+                        <td>Light machine gun
+                        </td>
+                        <td style="background-color:#f0d098;color:#332307;">Brownpants<b>/</b> Unlockable
+                        </td>
+                        <td style="text-align:right;">2
+                        </td>
+                        <td style="text-align:right;">150
+                        </td>
+                        <td style="text-align:right;">652
+                        </td>
+                        <td style="text-align:right;">0.56
+                        </td>
+                        <td style="text-align:right;">0.8
+                        </td>
+                        <td style="text-align:right;">0.9
+                        </td>
+                        <td style="text-align:right;">0.63
+                        </td>
+                        <td style="text-align:right;">33
+                        </td>
+                        <td style="text-align:right;">66.5
+                        </td>
+                        <td style="text-align:right;">95
+                        </td>
+                        <td style="text-align:right;">-6
+                        </td>
+                        <td style="text-align:right;">0.05 (16.6%)
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <img src="img/machineguns/Hud_stoner_lmg.webp" alt="">
+                        </td>
+                        <td>StonerLMG
+                        </td>
+                        <td>Light machine gun
+                        </td>
+                        <td style="background-color:#ADD8E6;color:#0c2026;">Rare <b>/</b> Secret crate
+                        </td>
+                        <td style="text-align:right;">160
+                        </td>
+                        <td style="text-align:right;">80
+                        </td>
+                        <td style="text-align:right;">600
+                        </td>
+                        <td style="text-align:right;">0.75
+                        </td>
+                        <td style="text-align:right;">0.8
+                        </td>
+                        <td style="text-align:right;">0.9
+                        </td>
+                        <td style="text-align:right;">0.6
+                        </td>
+                        <td style="text-align:right;">35
+                        </td>
+                        <td style="text-align:right;">75
+                        </td>
+                        <td style="text-align:right;">100
+                        </td>
+                        <td style="text-align:right;">-7
+                        </td>
+                        <td style="text-align:right;">0.0003
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <img src="img/machineguns/Stoner62.webp" alt="">
+                        </td>
+                        <td>Stoner62
+                        </td>
+                        <td>Light machine gun, full-auto,
+                            <p>1.4x zoom
+                            </p>
+                        </td>
+                        <td style="background-color:#ADD8E6;color:#0c2026;">Rare
+                        </td>
+                        <td style="text-align:right;">450
+                        </td>
+                        <td style="text-align:right;">20
+                        </td>
+                        <td style="text-align:right;">652
+                        </td>
+                        <td style="text-align:right;">0.92
+                        </td>
+                        <td style="text-align:right;">0.35
+                        </td>
+                        <td style="text-align:right;">1.4
+                        </td>
+                        <td style="text-align:right;">0.7
+                        </td>
+                        <td style="text-align:right;">52.8
+                        </td>
+                        <td style="text-align:right;">99
+                        </td>
+                        <td style="text-align:right;">110
+                        </td>
+                        <td style="text-align:right;">-6
+                        </td>
+                        <td style="text-align:right;">0.00002
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <img src="img/machineguns/Hud_ares_shrike.webp" alt="">
+                        </td>
+                        <td>ARESShrike
+                        </td>
+                        <td>Light machine gun,
+                            <p>6 round burst / semi-auto
+                            </p>
+                        </td>
+                        <td style="background-color:#f2caea;"><a href="https://runningwithrifles.fandom.com/wiki/Boxes" title="Boxes">Gift Box</a>
+                        </td>
+                        <td style="text-align:right;">300
+                        </td>
+                        <td style="text-align:right;">60
+                        </td>
+                        <td style="text-align:right;">705 (400)
+                        </td>
+                        <td style="text-align:right;">0.9
+                        </td>
+                        <td style="text-align:right;">0.1
+                        </td>
+                        <td style="text-align:right;">0.4
+                        </td>
+                        <td style="text-align:right;">0.57
+                        </td>
+                        <td style="text-align:right;">38
+                        </td>
+                        <td style="text-align:right;">70
+                        </td>
+                        <td style="text-align:right;">100
+                        </td>
+                        <td style="text-align:right;">-7
+                        </td>
+                        <td style="text-align:right;">0
+                            <p>(<a href="https://runningwithrifles.fandom.com/wiki/Boxes" title="Boxes">Blue, Purple, and Titan Boxes</a>)
+                            </p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <img src="img/machineguns/Hud_pecheneg_bullpup.webp" alt="">
+                        </td>
+                        <td>PechenegBullpup
+                        </td>
+                        <td>Bullpup machine gun, 1.2x zoom
+                        </td>
+                        <td style="background-color:#ADD8E6;color:#0c2026;">Rare
+                        </td>
+                        <td style="text-align:right;">430
+                        </td>
+                        <td style="text-align:right;">150
+                        </td>
+                        <td style="text-align:right;">545
+                        </td>
+                        <td style="text-align:right;">0.8
+                        </td>
+                        <td style="text-align:right;">0.7
+                        </td>
+                        <td style="text-align:right;">1.4
+                        </td>
+                        <td style="text-align:right;">0.7
+                        </td>
+                        <td style="text-align:right;">42
+                        </td>
+                        <td style="text-align:right;">90
+                        </td>
+                        <td style="text-align:right;">100
+                        </td>
+                        <td style="text-align:right;">-8
+                        </td>
+                        <td style="text-align:right;">0.00005
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <img src="img/machineguns/Chainsaw.webp" alt="">
+                        </td>
+                        <td>KACChainSAW
+                        </td>
+                        <td>Light machine gun, full-auto,
+                            <p>suppressed
+                            </p>
+                        </td>
+                        <td style="background-color:#ADD8E6;color:#0c2026;">Rare
+                        </td>
+                        <td style="text-align:right;">550
+                        </td>
+                        <td style="text-align:right;">150
+                        </td>
+                        <td style="text-align:right;">1200
+                        </td>
+                        <td style="text-align:right;">0.55
+                        </td>
+                        <td style="text-align:right;">1.5
+                        </td>
+                        <td style="text-align:right;">1.5
+                        </td>
+                        <td style="text-align:right;">0.46
+                        </td>
+                        <td style="text-align:right;">30
+                        </td>
+                        <td style="text-align:right;">72
+                        </td>
+                        <td style="text-align:right;">100
+                        </td>
+                        <td style="text-align:right;">-42
+                        </td>
+                        <td style="text-align:right;">0.00005
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <img src="img/machineguns/Hud_m60e4.webp" alt="">
+                        </td>
+                        <td>M60
+                        </td>
+                        <td>Machine gun
+                        </td>
+                        <td style="background-color:#f2caea;"><a href="https://runningwithrifles.fandom.com/wiki/Boxes" title="Boxes">Gift Box</a>
+                        </td>
+                        <td style="text-align:right;">700
+                        </td>
+                        <td style="text-align:right;">100
+                        </td>
+                        <td style="text-align:right;">600
+                        </td>
+                        <td style="text-align:right;">0.725
+                        </td>
+                        <td style="text-align:right;">2.5
+                        </td>
+                        <td style="text-align:right;">1.15
+                        </td>
+                        <td style="text-align:right;">0.71
+                        </td>
+                        <td style="text-align:right;">35
+                        </td>
+                        <td style="text-align:right;">65
+                        </td>
+                        <td style="text-align:right;">100
+                        </td>
+                        <td style="text-align:right;">-11
+                        </td>
+                        <td>0
+                            <p>(<a href="https://runningwithrifles.fandom.com/wiki/Boxes" title="Boxes">Purple &amp; Titan Boxes</a>)
+                            </p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <img src="img/machineguns/Microgun.webp" alt="">
+                        </td>
+                        <td>WBII Microgun
+                        </td>
+                        <td>Heavy machine gun
+                        </td>
+                        <td style="background-color:#ADD8E6;color:#0c2026;">Rare
+                        </td>
+                        <td style="text-align:right;">800
+                        </td>
+                        <td style="text-align:right;">200
+                        </td>
+                        <td style="text-align:right;">1875
+                        </td>
+                        <td style="text-align:right;">0.55
+                        </td>
+                        <td style="text-align:right;">1.5
+                        </td>
+                        <td style="text-align:right;">0.7
+                        </td>
+                        <td style="text-align:right;">0.5
+                        </td>
+                        <td style="text-align:right;">30
+                        </td>
+                        <td style="text-align:right;">72
+                        </td>
+                        <td style="text-align:right;">120
+                        </td>
+                        <td style="text-align:right;">-45
+                        </td>
+                        <td style="text-align:right;">0.00004 (0,0039%)
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <img src="img/machineguns/Hud_mg42.webp" alt="">
+                        </td>
+                        <td>MG42
+                        </td>
+                        <td>Machine gun
+                        </td>
+                        <td style="background-color:#ADD8E6;color:#0c2026;">Very rare
+                        </td>
+                        <td style="text-align:right;">1200
+                        </td>
+                        <td style="text-align:right;">150
+                        </td>
+                        <td style="text-align:right;">1200
+                        </td>
+                        <td style="text-align:right;">0.7
+                        </td>
+                        <td style="text-align:right;">0.2
+                        </td>
+                        <td style="text-align:right;">0.9
+                        </td>
+                        <td style="text-align:right;">0.62
+                        </td>
+                        <td style="text-align:right;">42
+                        </td>
+                        <td style="text-align:right;">90
+                        </td>
+                        <td style="text-align:right;">120
+                        </td>
+                        <td style="text-align:right;">-12
+                        </td>
+                        <td style="text-align:right;">0.00001 (0,00074%)
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <img src="img/machineguns/Hud_rpd.webp" alt="">
+                        </td>
+                        <td>RPD
+                        </td>
+                        <td>Machine gun with optional bipod
+                            <p>(bipod stats in parenthesis)
+                            </p>
+                        </td>
+                        <td style="background-color:#f2caea;"><a href="https://runningwithrifles.fandom.com/wiki/Boxes" title="Boxes">Gift Box</a>
+                        </td>
+                        <td style="text-align:right;">610
+                        </td>
+                        <td style="text-align:right;">100
+                        </td>
+                        <td style="text-align:right;">652
+                        </td>
+                        <td style="text-align:right;">0.7
+                        </td>
+                        <td style="text-align:right;">0.8 (0.4)
+                        </td>
+                        <td style="text-align:right;">0.82 (1.3)
+                        </td>
+                        <td style="text-align:right;">0.6 (0.62)
+                        </td>
+                        <td style="text-align:right;">30 (35)
+                        </td>
+                        <td style="text-align:right;">70
+                        </td>
+                        <td style="text-align:right;">100
+                        </td>
+                        <td style="text-align:right;">-9.2 (-13)
+                        </td>
+                        <td>0
+                            <p>(<a href="https://runningwithrifles.fandom.com/wiki/Boxes" title="Boxes">Community Box 6</a>)
+                            </p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <img src="img/machineguns/Hud_ultimax.webp" alt="">
+                        </td>
+                        <td>Ultimax100
+                        </td>
+                        <td>Negative recoil machine gun, optional assault rifle mode (AR mode stats in parenthesis)
+                        </td>
+                        <td style="background-color:#f2caea;"><a href="https://runningwithrifles.fandom.com/wiki/Boxes" title="Boxes">Gift Box</a>
+                        </td>
+                        <td style="text-align:right;">800
+                        </td>
+                        <td style="text-align:right;">100 (30)
+                        </td>
+                        <td style="text-align:right;">667 (600)
+                        </td>
+                        <td style="text-align:right;">0.8 (0.85)
+                        </td>
+                        <td style="text-align:right;">-0.15(-0.2)
+                        </td>
+                        <td style="text-align:right;">-1.2 (-1.35)
+                        </td>
+                        <td style="text-align:right;">0.6
+                        </td>
+                        <td style="text-align:right;">51 (52)
+                        </td>
+                        <td style="text-align:right;">63.7 (65)
+                        </td>
+                        <td style="text-align:right;">98 (100)
+                        </td>
+                        <td style="text-align:right;">-10 (-7)
+                        </td>
+                        <td>0
+                            <p>(<a href="https://runningwithrifles.fandom.com/wiki/Boxes" title="Boxes">Community Box 6</a>)
+                            </p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <img src="img/machineguns/Dp28.webp" alt="">
+                        </td>
+                        <td>DP28
+                        </td>
+                        <td>LMG with optional shield (shield can only shoot prone, stats in parenthesis)
+                        </td>
+                        <td style="background-color:#f2caea;"><a href="https://runningwithrifles.fandom.com/wiki/Boxes" title="Boxes">Gift Box</a>
+                        </td>
+                        <td style="text-align:right;">280
+                        </td>
+                        <td style="text-align:right;">47
+                        </td>
+                        <td style="text-align:right;">600
+                        </td>
+                        <td style="text-align:right;">0.78
+                        </td>
+                        <td style="text-align:right;">1 (0.8)
+                        </td>
+                        <td style="text-align:right;">2.4
+                        </td>
+                        <td style="text-align:right;">0.65
+                        </td>
+                        <td style="text-align:right;">36.3
+                        </td>
+                        <td style="text-align:right;">70.4
+                        </td>
+                        <td style="text-align:right;">110
+                        </td>
+                        <td style="text-align:right;">-10 (-30)
+                        </td>
+                        <td>0 (limited duration: Halloween Box only, will hopefully be added to another box soon)
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <img src="img/machineguns/Hud_m249.webp" alt="">
+                        </td>
+                        <td>M249
+                        </td>
+                        <td>Light machine gun, 1.1x scope, optional suppressor (stats in parenthesis)
+                        </td>
+                        <td style="background-color:#f2caea;"><a href="https://runningwithrifles.fandom.com/wiki/Boxes" title="Boxes">Gift Box</a>
+                        </td>
+                        <td style="text-align:right;">249
+                        </td>
+                        <td style="text-align:right;">120
+                        </td>
+                        <td style="text-align:right;">779
+                        </td>
+                        <td style="text-align:right;">0.85
+                        </td>
+                        <td style="text-align:right;">0.65
+                        </td>
+                        <td style="text-align:right;">0.85
+                        </td>
+                        <td style="text-align:right;">0.58 (0.53)
+                        </td>
+                        <td style="text-align:right;">35 (30)
+                        </td>
+                        <td style="text-align:right;">70 (70)
+                        </td>
+                        <td style="text-align:right;">100
+                        </td>
+                        <td style="text-align:right;">-6.5
+                        </td>
+                        <td style="text-align:right;">0 (<a href="https://runningwithrifles.fandom.com/wiki/Boxes" title="Boxes">Cooler Box 1</a>)
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <img src="img/machineguns/Hud_rpk16.webp" alt="">
+                        </td>
+                        <td>RPK16
+                        </td>
+                        <td>Light machine gun that allows for movement whilst firing, with an optional Long Barrel
+                            attachment that will require the operator to be instead crouched or prone (stats in
+                            parenthesis) NOTE: Standard mode has a minimum accuracy of 0.73 after sustained fire, whilst
+                            the Long Barrel mode has a minimum accuracy of 0.48
+                        </td>
+                        <td style="background-color:#f2caea;"><a href="https://runningwithrifles.fandom.com/wiki/Boxes" title="Boxes">Gift Box</a>
+                        </td>
+                        <td style="text-align:right;">216
+                        </td>
+                        <td style="text-align:right;">96
+                        </td>
+                        <td style="text-align:right;">706
+                        </td>
+                        <td style="text-align:right;">0.9 (0.95)
+                        </td>
+                        <td style="text-align:right;">0.55 (0.15)
+                        </td>
+                        <td style="text-align:right;">0.9 (0.7)
+                        </td>
+                        <td style="text-align:right;">0.55 (0.65)
+                        </td>
+                        <td style="text-align:right;">40 (50)
+                        </td>
+                        <td style="text-align:right;">70 (70)
+                        </td>
+                        <td style="text-align:right;">100
+                        </td>
+                        <td style="text-align:right;">-6 (-12)
+                        </td>
+                        <td style="text-align:right;">0 (<a href="https://runningwithrifles.fandom.com/wiki/Boxes" title="Boxes">Cooler Box 2</a>)
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <img src="img/machineguns/Hud_qjz89.webp" alt="">
+                        </td>
+                        <td>QJZ89
+                        </td>
+                        <td>Heavy machine gun with 1.1x scope that can only be fired whilst prone or behind cover,
+                            minimum accuracy of 0.60
+                        </td>
+                        <td style="background-color:#f2caea;"><a href="https://runningwithrifles.fandom.com/wiki/Boxes" title="Boxes">Gift Box</a>
+                        </td>
+                        <td style="text-align:right;">399
+                        </td>
+                        <td style="text-align:right;">200
+                        </td>
+                        <td style="text-align:right;">600
+                        </td>
+                        <td style="text-align:right;">0.85
+                        </td>
+                        <td style="text-align:right;">0.06
+                        </td>
+                        <td style="text-align:right;">0.4
+                        </td>
+                        <td style="text-align:right;">0.88
+                        </td>
+                        <td style="text-align:right;">52.8
+                        </td>
+                        <td style="text-align:right;">77
+                        </td>
+                        <td style="text-align:right;">110
+                        </td>
+                        <td style="text-align:right;">-45
+                        </td>
+                        <td style="text-align:right;">0 (<a href="https://runningwithrifles.fandom.com/wiki/Boxes" title="Boxes">Cooler Box 2</a>)
+                        </td>
+                    </tr>
+                    <!--  -->
+                    <tr>
+                        <td>
+                            
+                            <img src="img/Shotguns/Hud_mossberg.webp" alt="">
+                        </td>
+                        <td>Mossberg500
+                        </td>
+                        <td>Shotgun, pump-action
+                        </td>
+                        <td style="background-color:#AADDAA;color:#0b1b0b;">Greenbelts<b>/</b>
+                        <p>Unlockable
+                        </p>
+                        </td>
+                        <td style="text-align:right;">2
+                        </td>
+                        <td style="text-align:right;">8
+                        </td>
+                        <td style="text-align:right;">60
+                        </td>
+                        <td style="text-align:right;">0.75
+                        </td>
+                        <td style="text-align:right;">2
+                        </td>
+                        <td style="text-align:right;">0.9
+                        </td>
+                        <td style="text-align:right;">0.6x5
+                        </td>
+                        <td style="text-align:right;">21.5
+                        </td>
+                        <td style="text-align:right;">25.8
+                        </td>
+                        <td style="text-align:right;">86
+                        </td>
+                        <td style="text-align:right;">0
+                        </td>
+                        <td style="text-align:right;">0.01
+                        </td></tr>
+                        <tr>
+                        <td>
+                            
+                            <img src="img/Shotguns/Hud_spas-12.webp" alt="">
+                        </td>
+                        <td>SPAS12
+                        </td>
+                        <td>Shotgun, pump-action
+                        </td>
+                        <td style="background-color:#CCCCCC;color:#1b1b1b;">Graycollars<b>/</b>
+                        <p>Unlockable
+                        </p>
+                        </td>
+                        <td style="text-align:right;">2
+                        </td>
+                        <td style="text-align:right;">8
+                        </td>
+                        <td style="text-align:right;">60
+                        </td>
+                        <td style="text-align:right;">0.68
+                        </td>
+                        <td style="text-align:right;">2
+                        </td>
+                        <td style="text-align:right;">0.9
+                        </td>
+                        <td style="text-align:right;">0.62x6
+                        </td>
+                        <td style="text-align:right;">21.6
+                        </td>
+                        <td style="text-align:right;">26.1
+                        </td>
+                        <td style="text-align:right;">90
+                        </td>
+                        <td style="text-align:right;">-2
+                        </td>
+                        <td style="text-align:right;">0.01
+                        </td></tr>
+                        <tr>
+                        <td>
+                            <img src="img/Shotguns/Hud_qbs-09.webp" alt="">
+                        </td>
+                        <td>QBS09
+                        </td>
+                        <td>Shotgun, semi-auto
+                        </td>
+                        <td style="background-color:#f0d098;color:#332307;">Brownpants<b>/</b>
+                        <p>Unlockable
+                        </p>
+                        </td>
+                        <td style="text-align:right;">2
+                        </td>
+                        <td style="text-align:right;">10
+                        </td>
+                        <td style="text-align:right;">150
+                        </td>
+                        <td style="text-align:right;">0.74
+                        </td>
+                        <td style="text-align:right;">2
+                        </td>
+                        <td style="text-align:right;">0.9
+                        </td>
+                        <td style="text-align:right;">0.59x5
+                        </td>
+                        <td style="text-align:right;">19.8
+                        </td>
+                        <td style="text-align:right;">27.5
+                        </td>
+                        <td style="text-align:right;">86
+                        </td>
+                        <td style="text-align:right;">0
+                        </td>
+                        <td style="text-align:right;">0.01
+                        </td></tr>
+                        <tr>
+                        <td>
+                            <img src="img/Shotguns/Hud_uts15.webp" alt="">
+                        </td>
+                        <td>UTS15
+                        </td>
+                        <td>Bullpup pump-action shotgun
+                        </td>
+                        <td style="background-color:#ADD8E6;color:#0c2026;">Uncommon/
+                        <p>EOD
+                        </p>
+                        </td>
+                        <td style="text-align:right;">20
+                        </td>
+                        <td style="text-align:right;">14
+                        </td>
+                        <td style="text-align:right;">120
+                        </td>
+                        <td style="text-align:right;">0.75
+                        </td>
+                        <td style="text-align:right;">2
+                        </td>
+                        <td style="text-align:right;">0.9
+                        </td>
+                        <td style="text-align:right;">0.65x6
+                        </td>
+                        <td style="text-align:right;">23
+                        </td>
+                        <td style="text-align:right;">27.5
+                        </td>
+                        <td style="text-align:right;">100
+                        </td>
+                        <td style="text-align:right;">-3
+                        </td>
+                        <td style="text-align:right;">0.004
+                        </td></tr>
+                        <tr>
+                        <td>
+                            <img src="img/Shotguns/Hud_ns2000.webp" alt="">
+                        </td>
+                        <td>Neostead2000
+                        </td>
+                        <td>Bullpup pump-action shotgun
+                        </td>
+                        <td style="background-color:#ADD8E6;color:#0c2026;">Rare
+                        </td>
+                        <td style="text-align:right;">100
+                        </td>
+                        <td style="text-align:right;">10
+                        </td>
+                        <td style="text-align:right;">60
+                        </td>
+                        <td style="text-align:right;">0.8
+                        </td>
+                        <td style="text-align:right;">2
+                        </td>
+                        <td style="text-align:right;">0.9
+                        </td>
+                        <td style="text-align:right;">0.7x4
+                        </td>
+                        <td style="text-align:right;">31.5
+                        </td>
+                        <td style="text-align:right;">36
+                        </td>
+                        <td style="text-align:right;">90
+                        </td>
+                        <td style="text-align:right;">0
+                        </td>
+                        <td style="text-align:right;">0.0005
+                        </td></tr>
+                        <tr>
+                        <td>
+                            <img src="img/Shotguns/Hud_pepperdust.webp" alt="">
+                        </td>
+                        <td>Pepperdust
+                        </td>
+                        <td>Pump-action shotgun,
+                        <p>stun only, supressed
+                        </p>
+                        </td>
+                        <td style="background-color:#ADD8E6;color:#0c2026;">Rare
+                        </td>
+                        <td style="text-align:right;">100
+                        </td>
+                        <td style="text-align:right;">15
+                        </td>
+                        <td style="text-align:right;">60
+                        </td>
+                        <td style="text-align:right;">0.8
+                        </td>
+                        <td style="text-align:right;">2
+                        </td>
+                        <td style="text-align:right;">0.6
+                        </td>
+                        <td style="text-align:right;">Stun 0.65x10
+                        </td>
+                        <td style="text-align:right;">22.4
+                        </td>
+                        <td style="text-align:right;">32
+                        </td>
+                        <td style="text-align:right;">80
+                        </td>
+                        <td style="text-align:right;">+6
+                        </td>
+                        <td style="text-align:right;">0.0006
+                        </td></tr>
+                        <tr>
+                        <td>
+                            <img src="img/Shotguns/Hud_benelli_m4.webp" alt="">
+                        </td>
+                        <td>Benelli M4
+                        </td>
+                        <td>Shotgun, semi-auto
+                        </td>
+                        <td style="background-color:#ADD8E6;color:#0c2026;">Rare <b>/</b>
+                        <p>Secret crate
+                        </p>
+                        </td>
+                        <td style="text-align:right;">200
+                        </td>
+                        <td style="text-align:right;">12
+                        </td>
+                        <td style="text-align:right;">180
+                        </td>
+                        <td style="text-align:right;">0.8
+                        </td>
+                        <td style="text-align:right;">2
+                        </td>
+                        <td style="text-align:right;">0.9
+                        </td>
+                        <td style="text-align:right;">0.65x5
+                        </td>
+                        <td style="text-align:right;">23.5
+                        </td>
+                        <td style="text-align:right;">30.1
+                        </td>
+                        <td style="text-align:right;">94
+                        </td>
+                        <td style="text-align:right;">0
+                        </td>
+                        <td style="text-align:right;">0.0006
+                        </td></tr>
+                        <tr>
+                        <td>
+                            <img src="img/Shotguns/Hud_benelli_m4_supp.webp" alt="">
+                        </td>
+                        <td>Benelli M4
+                        <p>suppressed
+                        </p>
+                        </td>
+                        <td>Shotgun, semi-auto, silenced (swap from Benelli M4)
+                        </td>
+                        <td style="background-color:#ADD8E6;color:#0c2026;">Rare
+                        </td>
+                        <td style="text-align:right;">200
+                        </td>
+                        <td style="text-align:right;">8
+                        </td>
+                        <td style="text-align:right;">180
+                        </td>
+                        <td style="text-align:right;">0.78
+                        </td>
+                        <td style="text-align:right;">2
+                        </td>
+                        <td style="text-align:right;">0.8
+                        </td>
+                        <td style="text-align:right;">0.65x5
+                        </td>
+                        <td style="text-align:right;">19.8
+                        </td>
+                        <td style="text-align:right;">34.2
+                        </td>
+                        <td style="text-align:right;">90
+                        </td>
+                        <td style="text-align:right;">0
+                        </td>
+                        <td style="text-align:right;">0.0001
+                        </td></tr>
+                        <tr>
+                        <td>
+                            <img src="img/Shotguns/Hud_aa-12.webp" alt="">
+                        </td>
+                        <td>AA12
+                        </td>
+                        <td>Assault shotgun, full-auto,
+                        <p>full magazine reload
+                        </p>
+                        </td>
+                        <td style="background-color:#ADD8E6;color:#0c2026;">Rare
+                        </td>
+                        <td style="text-align:right;">150
+                        </td>
+                        <td style="text-align:right;">20
+                        </td>
+                        <td style="text-align:right;">240
+                        </td>
+                        <td style="text-align:right;">0.9
+                        </td>
+                        <td style="text-align:right;">0.6
+                        </td>
+                        <td style="text-align:right;">0.6
+                        </td>
+                        <td style="text-align:right;">0.5x3
+                        </td>
+                        <td style="text-align:right;">28.5
+                        </td>
+                        <td style="text-align:right;">38
+                        </td>
+                        <td style="text-align:right;">95
+                        </td>
+                        <td style="text-align:right;">0
+                        </td>
+                        <td style="text-align:right;">0.0002
+                        </td></tr>
+                        <tr>
+                        <td>
+                            <img src="img/Shotguns/Hud_jackhammer.webp" alt="">
+                        </td>
+                        <td>Jackhammer
+                        </td>
+                        <td>Shotgun, full-auto,
+                        <p>full magazine reload
+                        </p>
+                        </td>
+                        <td style="background-color:#ADD8E6;color:#0c2026;">Rare
+                        </td>
+                        <td style="text-align:right;">350
+                        </td>
+                        <td style="text-align:right;">10
+                        </td>
+                        <td style="text-align:right;">240
+                        </td>
+                        <td style="text-align:right;">0.9
+                        </td>
+                        <td style="text-align:right;">0.7
+                        </td>
+                        <td style="text-align:right;">1.4
+                        </td>
+                        <td style="text-align:right;">0.6x3
+                        </td>
+                        <td style="text-align:right;">31.4
+                        </td>
+                        <td style="text-align:right;">49
+                        </td>
+                        <td style="text-align:right;">98
+                        </td>
+                        <td style="text-align:right;">-4
+                        </td>
+                        <td style="text-align:right;">0.0001
+                        </td></tr>
+                        <tr>
+                        <td>
+                            <img src="img/Shotguns/Hud_tti.webp" alt="">
+                        </td>
+                        <td>TTI-Combat Shield
+                        </td>
+                        <td>Pump-action shotgun,
+                        <p>ballistic shield
+                        </p>
+                        </td>
+                        <td style="background-color:#f2caea;color:#2a0a23;"><a href="https://runningwithrifles.fandom.com/wiki/Boxes" title="Boxes">Gift Box</a>
+                        </td>
+                        <td style="text-align:right;">210
+                        </td>
+                        <td style="text-align:right;">3
+                        </td>
+                        <td style="text-align:right;">60
+                        </td>
+                        <td style="text-align:right;">0.7
+                        </td>
+                        <td style="text-align:right;">2.0
+                        </td>
+                        <td style="text-align:right;">0.9
+                        </td>
+                        <td style="text-align:right;">0.6x6
+                        </td>
+                        <td style="text-align:right;">22.5
+                        </td>
+                        <td style="text-align:right;">27
+                        </td>
+                        <td style="text-align:right;">90
+                        </td>
+                        <td style="text-align:right;">-35
+                        <p>(-32 for EOD AI)
+                        </p>
+                        </td>
+                        <td style="text-align:right;">0
+                        <p>(<a href="https://runningwithrifles.fandom.com/wiki/Boxes" title="Boxes">Community Box 2</a>)
+                        </p>
+                        </td></tr>
+                        <tr>
+                        <td>
+                            <img src="img/Shotguns/Hud_hunter_shotgun.webp" alt="">
+                        </td>
+                        <td>KSxS6 Hunter
+                        </td>
+                        <td>Double-barreled shotgun,
+                        <p>can fire one or both barrels
+                        </p>
+                        </td>
+                        <td style="background-color:#f2caea;color:#2a0a23;"><a href="https://runningwithrifles.fandom.com/wiki/Boxes" title="Boxes">Gift Box</a>
+                        </td>
+                        <td style="text-align:right;">400
+                        </td>
+                        <td style="text-align:right;">2
+                        </td>
+                        <td style="text-align:right;">N/A
+                        </td>
+                        <td style="text-align:right;">0.75
+                        </td>
+                        <td style="text-align:right;">2.0
+                        </td>
+                        <td style="text-align:right;">1.0
+                        </td>
+                        <td style="text-align:right;">0.6x6
+                        <p>(Special: each pellet 
+                        </p><p>deals 2 damage)
+                        </p>
+                        </td>
+                        <td style="text-align:right;">9
+                        </td>
+                        <td style="text-align:right;">63
+                        </td>
+                        <td style="text-align:right;">90
+                        </td>
+                        <td style="text-align:right;">-2
+                        </td>
+                        <td style="text-align:right;">0
+                        <p>(<a href="https://runningwithrifles.fandom.com/wiki/Boxes" title="Boxes">Community Box 6</a>)
+                        </p>
+                        </td></tr>
+                        
+                        <tr>
+                        <td>
+                            <img src="img/Shotguns/Hud_ksg_b.webp" alt="">
+                        </td>
+                        <td>KSG
+                        </td>
+                        <td>Shotgun, pump-action, with 2 independent ammo tubes, can switch freely between Buckshot and Slug rounds (slug stats in parenthesis)
+                        </td>
+                        <td style="background-color:#f2caea;color:#2a0a23;"><a href="https://runningwithrifles.fandom.com/wiki/Boxes" title="Boxes">Gift Box</a>
+                        </td>
+                        <td style="text-align:right;">280
+                        </td>
+                        <td style="text-align:right;">7 (7)
+                        </td>
+                        <td style="text-align:right;">60
+                        </td>
+                        <td style="text-align:right;">0.75 (1)
+                        </td>
+                        <td style="text-align:right;">2.0
+                        </td>
+                        <td style="text-align:right;">0.9 (1.5)
+                        </td>
+                        <td style="text-align:right;">0.65x6 (0.65x4)
+                        </td>
+                        <td style="text-align:right;">23 (32)
+                        </td>
+                        <td style="text-align:right;">27.5 (44)
+                        </td>
+                        <td style="text-align:right;">100 (80)
+                        </td>
+                        <td style="text-align:right;">-3
+                        </td>
+                        <td style="text-align:right;">0
+                        <p>(<a href="https://runningwithrifles.fandom.com/wiki/Boxes" title="Boxes">Cooler Box 1</a>)
+                        </p>
+                        </td></tr>
+                        <tr>
+                        <td>
+                            <img src="img/Shotguns/Hud_ks23.webp" alt="">
+                        </td>
+                        <td>KS23
+                        </td>
+                        <td>Shotgun, 4 gauge, pump-action
+                        </td>
+                        <td style="background-color:#f2caea;color:#2a0a23;"><a href="https://runningwithrifles.fandom.com/wiki/Boxes" title="Boxes">Gift Box</a>
+                        </td>
+                        <td style="text-align:right;">299
+                        </td>
+                        <td style="text-align:right;">3
+                        </td>
+                        <td style="text-align:right;">75
+                        </td>
+                        <td style="text-align:right;">0.65
+                        </td>
+                        <td style="text-align:right;">5.0
+                        </td>
+                        <td style="text-align:right;">1.6
+                        </td>
+                        <td style="text-align:right;">0.55x10
+                        </td>
+                        <td style="text-align:right;">18
+                        </td>
+                        <td style="text-align:right;">45
+                        </td>
+                        <td style="text-align:right;">90
+                        </td>
+                        <td style="text-align:right;">-8
+                        </td>
+                        <td style="text-align:right;">0
+                        <p>(<a href="https://runningwithrifles.fandom.com/wiki/Boxes" title="Boxes">Cooler Box 2</a>)
+                        </p>
+                        </td></tr>
+                        <!--  -->
+                        <tr>
+                            <td>
+                                <img src="img/Snipers/Hud_m24a2.webp" alt="">
+                            </td>
+                            <td>M24A2
+                            </td>
+                            <td>Sniper rifle, bolt-action, 1.6x zoom
+                            </td>
+                            <td style="background-color:#AADDAA;color:#0b1b0b;">Greenbelts<b>/</b>
+                                <p>Unlockable
+                                </p>
+                            </td>
+                            <td style="text-align:right;">4
+                            </td>
+                            <td style="text-align:right;">10
+                            </td>
+                            <td style="text-align:right;">N/A
+                            </td>
+                            <td style="text-align:right;">1
+                            </td>
+                            <td style="text-align:right;">3
+                            </td>
+                            <td style="text-align:right;">0.55
+                            </td>
+                            <td style="text-align:right;">1
+                            </td>
+                            <td style="text-align:right;">99
+                            </td>
+                            <td style="text-align:right;">144
+                            </td>
+                            <td style="text-align:right;">180
+                            </td>
+                            <td style="text-align:right;">-7
+                            </td>
+                            <td style="text-align:right;">0.01 (2.3%)
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><img src="img/Snipers/Hud_psg90.webp" alt="">
+                            </td>
+                            <td>PSG90
+                            </td>
+                            <td>Sniper rifle, bolt-action, 1.6x zoom
+                            </td>
+                            <td style="background-color:#CCCCCC;color:#1b1b1b;">Graycollars<b>/</b>
+                                <p>Unlockable
+                                </p>
+                            </td>
+                            <td style="text-align:right;">4
+                            </td>
+                            <td style="text-align:right;">10
+                            </td>
+                            <td style="text-align:right;">N/A
+                            </td>
+                            <td style="text-align:right;">1
+                            </td>
+                            <td style="text-align:right;">3
+                            </td>
+                            <td style="text-align:right;">0.5
+                            </td>
+                            <td style="text-align:right;">1
+                            </td>
+                            <td style="text-align:right;">104.5
+                            </td>
+                            <td style="text-align:right;">152
+                            </td>
+                            <td style="text-align:right;">190
+                            </td>
+                            <td style="text-align:right;">-6
+                            </td>
+                            <td style="text-align:right;">0.01 (2.3%)
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><img src="img/Snipers/Hud_dragunov_svd.webp" alt="">
+                            </td>
+                            <td>Dragunov SVD
+                            </td>
+                            <td>Sniper rifle, semi-auto, 1.45x zoom
+                            </td>
+                            <td style="background-color:#f0d098;color:#332307;">Brownpants<b>/</b>
+                                <p>Unlockable
+                                </p>
+                            </td>
+                            <td style="text-align:right;">4
+                            </td>
+                            <td style="text-align:right;">10
+                            </td>
+                            <td style="text-align:right;">80
+                            </td>
+                            <td style="text-align:right;">1
+                            </td>
+                            <td style="text-align:right;">3
+                            </td>
+                            <td style="text-align:right;">0.87
+                            </td>
+                            <td style="text-align:right;">0.9
+                            </td>
+                            <td style="text-align:right;">101.8
+                            </td>
+                            <td style="text-align:right;">129.5
+                            </td>
+                            <td style="text-align:right;">185
+                            </td>
+                            <td style="text-align:right;">-4
+                            </td>
+                            <td style="text-align:right;">0.01 (2.3%)
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><img src="img/Snipers/Hud_apr.webp" alt="">
+                            </td>
+                            <td>APR
+                            </td>
+                            <td>Sniper rifle, bolt-action,
+                                <p>1.45x zoom, suppressed
+                                </p>
+                            </td>
+                            <td style="background-color:#FFFACD;color:#302b00;">Unlockable/
+                                <p>Lone Wolf
+                                </p>
+                            </td>
+                            <td style="text-align:right;">25
+                            </td>
+                            <td style="text-align:right;">5
+                            </td>
+                            <td style="text-align:right;">N/A
+                            </td>
+                            <td style="text-align:right;">1.0
+                            </td>
+                            <td style="text-align:right;">3.0
+                            </td>
+                            <td style="text-align:right;">0.7
+                            </td>
+                            <td style="text-align:right;">0.85
+                            </td>
+                            <td style="text-align:right;">78
+                            </td>
+                            <td style="text-align:right;">120
+                            </td>
+                            <td style="text-align:right;">160
+                            </td>
+                            <td style="text-align:right;">-9
+                            </td>
+                            <td style="text-align:right;">0.00001
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><img src="img/Snipers/Scarssr.webp" alt="">
+                            </td>
+                            <td>SCAR SSR
+                            </td>
+                            <td>Designated marksman rifle, semi-auto,
+                                <p>1.5x zoom
+                                </p>
+                            </td>
+                            <td style="background-color:#ADD8E6;color:#0c2026;">Rare
+                            </td>
+                            <td style="text-align:right;">320
+                            </td>
+                            <td style="text-align:right;">20
+                            </td>
+                            <td style="text-align:right;">120
+                            </td>
+                            <td style="text-align:right;">1
+                            </td>
+                            <td style="text-align:right;">2
+                            </td>
+                            <td style="text-align:right;">1
+                            </td>
+                            <td style="text-align:right;">1.0
+                            </td>
+                            <td style="text-align:right;">81.6
+                            </td>
+                            <td style="text-align:right;">136
+                            </td>
+                            <td style="text-align:right;">170
+                            </td>
+                            <td style="text-align:right;">-8
+                            </td>
+                            <td style="text-align:right;">0.0002
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><img src="img/Snipers/Hud_vss_vintorez.webp" alt="">
+                            </td>
+                            <td>VSS Vintorez
+                            </td>
+                            <td>Designated marksman rifle, full-auto,
+                                <p>1.3x zoom, supressed
+                                </p>
+                            </td>
+                            <td style="background-color:#ADD8E6;color:#0c2026;">Rare
+                            </td>
+                            <td style="text-align:right;">200
+                            </td>
+                            <td style="text-align:right;">20
+                            </td>
+                            <td style="text-align:right;">300
+                            </td>
+                            <td style="text-align:right;">0.9
+                            </td>
+                            <td style="text-align:right;">3
+                            </td>
+                            <td style="text-align:right;">3
+                            </td>
+                            <td style="text-align:right;">0.8
+                            </td>
+                            <td style="text-align:right;">78
+                            </td>
+                            <td style="text-align:right;">120
+                            </td>
+                            <td style="text-align:right;">120
+                            </td>
+                            <td style="text-align:right;">-5
+                            </td>
+                            <td style="text-align:right;">0.0002
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><img src="img/Snipers/Hud_barrett_m107.webp" alt="">
+                            </td>
+                            <td>Barrett M107
+                            </td>
+                            <td>Sniper rifle, semi-auto,
+                                <p>body-armor piercing, can crouch fire, 1.65x zoom
+                                </p>
+                            </td>
+                            <td style="background-color:#ADD8E6;color:#0c2026;">Rare
+                            </td>
+                            <td style="text-align:right;">250
+                            </td>
+                            <td style="text-align:right;">10
+                            </td>
+                            <td style="text-align:right;">60
+                            </td>
+                            <td style="text-align:right;">1
+                            </td>
+                            <td style="text-align:right;">3
+                            </td>
+                            <td style="text-align:right;">0.8
+                            </td>
+                            <td style="text-align:right;">3.01
+                            </td>
+                            <td style="text-align:right;">108
+                            </td>
+                            <td style="text-align:right;">180
+                            </td>
+                            <td style="text-align:right;">180
+                            </td>
+                            <td style="text-align:right;">-15
+                            </td>
+                            <td style="text-align:right;">0.0001
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><img src="img/Snipers/Hud_lahti_l39.webp" alt="">
+                            </td>
+                            <td>Lahti L-39
+                            </td>
+                            <td>Sniper rifle, semi-auto,
+                                <p>explosive rounds, 1.35m radius,
+                                </p>
+                                <p>can pierce through bodies, 1.65x zoom
+                                </p>
+                            </td>
+                            <td style="background-color:#ADD8E6;color:#0c2026;">Very rare
+                            </td>
+                            <td style="text-align:right;">1000
+                            </td>
+                            <td style="text-align:right;">10
+                            </td>
+                            <td style="text-align:right;">50
+                            </td>
+                            <td style="text-align:right;">1
+                            </td>
+                            <td style="text-align:right;">1
+                            </td>
+                            <td style="text-align:right;">0.85
+                            </td>
+                            <td style="text-align:right;">5xExplosive (20)
+                            </td>
+                            <td style="text-align:right;">-
+                            </td>
+                            <td style="text-align:right;">-
+                            </td>
+                            <td style="text-align:right;">160
+                            </td>
+                            <td style="text-align:right;">-17
+                            </td>
+                            <td style="text-align:right;">0.000005 (0,00037%)
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><img src="img/Snipers/Hud_enforcer.webp" alt="">
+                            </td>
+                            <td>M711-LA Enforcer
+                            </td>
+                            <td>Designated marksman rifle, lever action,
+                                <p>can reload 1 round at a time, 1.3x zoom
+                                </p>
+                            </td>
+                            <td style="background-color:#f2caea;"><a href="https://runningwithrifles.fandom.com/wiki/Boxes" title="Boxes">Gift Box</a>
+                            </td>
+                            <td style="text-align:right;">330
+                            </td>
+                            <td style="text-align:right;">8
+                            </td>
+                            <td style="text-align:right;">N/A
+                            </td>
+                            <td style="text-align:right;">1
+                            </td>
+                            <td style="text-align:right;">2.5
+                            </td>
+                            <td style="text-align:right;">0.9
+                            </td>
+                            <td style="text-align:right;">1.2
+                            </td>
+                            <td style="text-align:right;">50.7
+                            </td>
+                            <td style="text-align:right;">80.6
+                            </td>
+                            <td style="text-align:right;">130
+                            </td>
+                            <td style="text-align:right;">-8
+                            </td>
+                            <td style="text-align:right;">0
+                                <p>(Found in <a href="https://runningwithrifles.fandom.com/wiki/Boxes" title="Boxes">Community Box 3</a>)
+                                </p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><img src="img/Snipers/Hud_gepard_m6_lynx.webp" alt="">
+                            </td>
+                            <td>M6Lynx
+                            </td>
+                            <td>Sniper rifle, semi-auto, body-armor piercing,
+                                <p>1.65x zoom, suppressed
+                                </p>
+                            </td>
+                            <td style="background-color:#f2caea;color:#2a0a23;"><a href="https://runningwithrifles.fandom.com/wiki/Boxes" title="Boxes">Gift
+                                    Box</a><b>/</b>
+                                <p>Lone Wolf
+                                </p>
+                            </td>
+                            <td style="text-align:right;">300
+                            </td>
+                            <td style="text-align:right;">5
+                            </td>
+                            <td style="text-align:right;">60
+                            </td>
+                            <td style="text-align:right;">1
+                            </td>
+                            <td style="text-align:right;">3.0
+                            </td>
+                            <td style="text-align:right;">0.9
+                            </td>
+                            <td style="text-align:right;">1.5
+                            </td>
+                            <td style="text-align:right;">90
+                            </td>
+                            <td style="text-align:right;">150
+                            </td>
+                            <td style="text-align:right;">150
+                            </td>
+                            <td style="text-align:right;">-16
+                            </td>
+                            <td style="text-align:right;">0.000001 and
+                                <p><a href="https://runningwithrifles.fandom.com/wiki/Boxes" title="Boxes">Community Box 4</a>
+                                </p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><img src="img/Snipers/M14k.webp" alt="">
+                            </td>
+                            <td>M14k
+                            </td>
+                            <td>Automatic marksman rifle, scopeless, but with optional stim-pack mode
+                            </td>
+                            <td style="background-color:#f2caea;"><a href="https://runningwithrifles.fandom.com/wiki/Boxes" title="Boxes">Gift Box</a>
+                            </td>
+                            <td style="text-align:right;">390
+                            </td>
+                            <td style="text-align:right;">10
+                            </td>
+                            <td style="text-align:right;">561
+                            </td>
+                            <td style="text-align:right;">1
+                            </td>
+                            <td style="text-align:right;">2.5
+                            </td>
+                            <td style="text-align:right;">0.9
+                            </td>
+                            <td style="text-align:right;">0.75
+                            </td>
+                            <td style="text-align:right;">54
+                            </td>
+                            <td style="text-align:right;">72
+                            </td>
+                            <td style="text-align:right;">120
+                            </td>
+                            <td style="text-align:right;">-2
+                            </td>
+                            <td>0 (Found in <a href="https://runningwithrifles.fandom.com/wiki/Boxes" title="Boxes">Community Box 5</a> and Pumpkin Box only)
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><img src="img/Snipers/Fd338.webp" alt="">
+                            </td>
+                            <td>FD338
+                            </td>
+                            <td>Semi-auto sniper rifle, 1.55x zoom, (optional supressor)
+                            </td>
+                            <td style="background-color:#f2caea;"><a href="https://runningwithrifles.fandom.com/wiki/Boxes" title="Boxes">Gift Box</a>
+                            </td>
+                            <td style="text-align:right;">338
+                            </td>
+                            <td style="text-align:right;">10
+                            </td>
+                            <td style="text-align:right;">200 (150)
+                            </td>
+                            <td style="text-align:right;">1 (0.95)
+                            </td>
+                            <td style="text-align:right;">2.4 (2.2)
+                            </td>
+                            <td style="text-align:right;">1.1
+                            </td>
+                            <td style="text-align:right;">0.9 (0.8)
+                            </td>
+                            <td style="text-align:right;">93.6 (67.5)
+                            </td>
+                            <td style="text-align:right;">147.6 (112.5)
+                            </td>
+                            <td style="text-align:right;">180 (150)
+                            </td>
+                            <td style="text-align:right;">-10
+                            </td>
+                            <td style="text-align:right;">0 (Found in <a href="https://runningwithrifles.fandom.com/wiki/Boxes" title="Boxes">Community Box
+                                    4</a> and Pumpkin Box only)
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><img src="img/Snipers/Golden_dragunov_svd.webp" alt="">
+                            </td>
+                            <td>GoldenDragunovSVD
+                            </td>
+                            <td>Sniper rifle, shiny, semi-auto, 1.45x zoom
+                            </td>
+                            <td style="background-color:#f2caea;"><a href="https://runningwithrifles.fandom.com/wiki/Boxes" title="Boxes">Gift Box</a>
+                            </td>
+                            <td style="text-align:right;">3100
+                            </td>
+                            <td style="text-align:right;">10
+                            </td>
+                            <td style="text-align:right;">80
+                            </td>
+                            <td style="text-align:right;">1
+                            </td>
+                            <td style="text-align:right;">3
+                            </td>
+                            <td style="text-align:right;">0.87
+                            </td>
+                            <td style="text-align:right;">1
+                            </td>
+                            <td style="text-align:right;">104.5
+                            </td>
+                            <td style="text-align:right;">133
+                            </td>
+                            <td style="text-align:right;">190
+                            </td>
+                            <td style="text-align:right;">-10
+                            </td>
+                            <td>0 (Found in <a href="https://runningwithrifles.fandom.com/wiki/Boxes" title="Boxes">Titan Box</a> and Pumpkin Box only)
+                            </td>
+                        </tr>
+    
+                        <tr>
+                            <td><img src="img/Snipers/Hud_sks.webp" alt="">
+                            </td>
+                            <td>SKS
+                            </td>
+                            <td>Designated marksman rifle, semi-auto, 1.45x zoom, optional magazine with incendiary rounds
+                                <p><br />
+                                    (incendiary rounds have 1.7m kill radius, do 10 vehicle damage, stats in paranthesis)
+                                </p>
+                            </td>
+                            <td style="background-color:#f2caea;"><a href="https://runningwithrifles.fandom.com/wiki/Boxes" title="Boxes">Gift Box</a>
+                            </td>
+                            <td style="text-align:right;">400
+                            </td>
+                            <td style="text-align:right;">20 (10)
+                            </td>
+                            <td style="text-align:right;">231 (286)
+                            </td>
+                            <td style="text-align:right;">1 (0.95)
+                            </td>
+                            <td style="text-align:right;">0.72 (1)
+                            </td>
+                            <td style="text-align:right;">1
+                            </td>
+                            <td style="text-align:right;">0.85 (1)
+                            </td>
+                            <td style="text-align:right;">81.6 (50)
+                            </td>
+                            <td style="text-align:right;">127.5 (50)
+                            </td>
+                            <td style="text-align:right;">170 (100)
+                            </td>
+                            <td style="text-align:right;">-4
+                            </td>
+                            <td style="text-align:right;">0
+                                <p>(<a href="https://runningwithrifles.fandom.com/wiki/Boxes" title="Boxes">Community Box 7</a>)
+                                </p>
+                            </td>
+                        </tr>
+    
+                        <tr>
+                            <td><img src="img/Snipers/Hud_m14ebr.webp" alt="">
+                            </td>
+                            <td>M14EBR
+                            </td>
+                            <td>Designated marksman rifle / battle rifle, with a full-auto Assault mode, semi-auto scoped
+                                Marksman mode (stats in parenthesis), and prone/cover only Support mode [stats in brackets]
+                                <p><br />
+                                </p>
+                            </td>
+                            <td style="background-color:#f2caea;"><a href="https://runningwithrifles.fandom.com/wiki/Boxes" title="Boxes">Gift Box</a>
+                            </td>
+                            <td style="text-align:right;">314
+                            </td>
+                            <td style="text-align:right;">15 (15) [50]
+                            </td>
+                            <td style="text-align:right;">300 (240) [545]
+                            </td>
+                            <td style="text-align:right;">0.98 (1.0) [0.98]
+                            </td>
+                            <td style="text-align:right;">2.0 (2.0) [2.0]
+                            </td>
+                            <td style="text-align:right;">1.5 (1.2) [1.5]
+                            </td>
+                            <td style="text-align:right;">0.8 (1.0) [0.6]
+                            </td>
+                            <td style="text-align:right;">78 (94.25) [52.8]
+                            </td>
+                            <td style="text-align:right;">120 (174) [88]
+                            </td>
+                            <td style="text-align:right;">120 (145) [110]
+                            </td>
+                            <td style="text-align:right;">-5 (-5) [-7]
+                            </td>
+                            <td style="text-align:right;">0
+                                <p>(<a href="https://runningwithrifles.fandom.com/wiki/Boxes" title="Boxes">Cooler Box 1</a>)
+                                </p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><img src="img/Snipers/Hud_sv98.webp" alt="">
+                                <img src="img/Snipers/Hud_sv98_p.webp" alt="">
+                            </td>
+                            <td>SV98 &amp;MP443 Grach
+                            </td>
+                            <td>Two-for-one special; a bolt-action sniper rifle with a 1.6x scope, and a semi-automatic
+                                pistol (stats in parenthesis)
+                                <p><br />
+                                </p>
+                            </td>
+                            <td style="background-color:#f2caea;"><a href="https://runningwithrifles.fandom.com/wiki/Boxes" title="Boxes">Gift Box</a>
+                            </td>
+                            <td style="text-align:right;">329
+                            </td>
+                            <td style="text-align:right;">10 (17)
+                            </td>
+                            <td style="text-align:right;">60 (600)
+                            </td>
+                            <td style="text-align:right;">1.0 (0.95)
+                            </td>
+                            <td style="text-align:right;">3.0 (0.4)
+                            </td>
+                            <td style="text-align:right;">0.55 (1.0)
+                            </td>
+                            <td style="text-align:right;">1.0 (0.5)
+                            </td>
+                            <td style="text-align:right;">105 (35)
+                            </td>
+                            <td style="text-align:right;">148.75 (50)
+                            </td>
+                            <td style="text-align:right;">175 (100)
+                            </td>
+                            <td style="text-align:right;">-10 (0)
+                            </td>
+                            <td style="text-align:right;">0
+                                <p>(<a href="https://runningwithrifles.fandom.com/wiki/Boxes" title="Boxes">Cooler Box 2</a>)
+                                </p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><img src="img/Snipers/Hud_vks.webp" alt="">
+                            </td>
+                            <td>VKS
+                            </td>
+                            <td>Suppressed, bolt-action, bullpup sniper rifle with a 1.3x scope
+                                <p><br />
+                                </p>
+                            </td>
+                            <td style="background-color:#f2caea;"><a href="https://runningwithrifles.fandom.com/wiki/Boxes" title="Boxes">Gift Box</a>
+                            </td>
+                            <td style="text-align:right;">250
+                            </td>
+                            <td style="text-align:right;">5
+                            </td>
+                            <td style="text-align:right;">60
+                            </td>
+                            <td style="text-align:right;">1.0
+                            </td>
+                            <td style="text-align:right;">4.0
+                            </td>
+                            <td style="text-align:right;">1.5
+                            </td>
+                            <td style="text-align:right;">0.8
+                            </td>
+                            <td style="text-align:right;">84
+                            </td>
+                            <td style="text-align:right;">120
+                            </td>
+                            <td style="text-align:right;">120
+                            </td>
+                            <td style="text-align:right;">-16
+                            </td>
+                            <td style="text-align:right;">0
+                                <p>(<a href="https://runningwithrifles.fandom.com/wiki/Boxes" title="Boxes">Cooler Box 2</a>)
+                                </p>
+                            </td>
+                        </tr>
+                        <!--  -->
+                        <tr>
+                            <td>
+                                <img src="img/Supressed Submachineguns/Hud_mp5sd.webp" alt="">
+                            </td>
+                            <td>MP5SD
+                            </td>
+                            <td>Submachine gun, suppressed
+                            </td>
+                            <td style="background-color:#AADDAA;color:#0b1b0b;">Greenbelts<b>/</b>
+                                <p>Unlockable
+                                </p>
+                            </td>
+                            <td style="text-align:right;">4
+                            </td>
+                            <td style="text-align:right;">30
+                            </td>
+                            <td style="text-align:right;">652
+                            </td>
+                            <td style="text-align:right;">1
+                            </td>
+                            <td style="text-align:right;">0.7
+                            </td>
+                            <td style="text-align:right;">2.2
+                            </td>
+                            <td style="text-align:right;">0.4
+                            </td>
+                            <td style="text-align:right;">24
+                            </td>
+                            <td style="text-align:right;">40
+                            </td>
+                            <td style="text-align:right;">105
+                            </td>
+                            <td style="text-align:right;">0
+                            </td>
+                            <td style="text-align:right;">0.00001
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <img src="img/Supressed Submachineguns/Hud_scorpion-evo.webp" alt="">
+                            </td>
+                            <td>ScorpionEvoIII
+                            </td>
+                            <td>Submachine gun, suppressed
+                            </td>
+                            <td style="background-color:#CCCCCC;color:#1b1b1b;">Graycollars<b>/</b>
+                                <p>Unlockable
+                                </p>
+                            </td>
+                            <td style="text-align:right;">4
+                            </td>
+                            <td style="text-align:right;">30
+                            </td>
+                            <td style="text-align:right;">800
+                            </td>
+                            <td style="text-align:right;">1
+                            </td>
+                            <td style="text-align:right;">0.68
+                            </td>
+                            <td style="text-align:right;">2
+                            </td>
+                            <td style="text-align:right;">0.36
+                            </td>
+                            <td style="text-align:right;">22
+                            </td>
+                            <td style="text-align:right;">36
+                            </td>
+                            <td style="text-align:right;">100
+                            </td>
+                            <td style="text-align:right;">0
+                            </td>
+                            <td style="text-align:right;">0.00001
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <img src="img/Supressed Submachineguns/Hud_qcw-05.webp" alt="">
+                            </td>
+                            <td>QCW05
+                            </td>
+                            <td>Bullpup submachine gun, suppressed
+                            </td>
+                            <td style="background-color:#f0d098;color:#332307;">Brownpants<b>/</b>
+                                <p>Unlockable
+                                </p>
+                            </td>
+                            <td style="text-align:right;">4
+                            </td>
+                            <td style="text-align:right;">50
+                            </td>
+                            <td style="text-align:right;">706
+                            </td>
+                            <td style="text-align:right;">1
+                            </td>
+                            <td style="text-align:right;">0.62
+                            </td>
+                            <td style="text-align:right;">2
+                            </td>
+                            <td style="text-align:right;">0.35
+                            </td>
+                            <td style="text-align:right;">22
+                            </td>
+                            <td style="text-align:right;">35
+                            </td>
+                            <td style="text-align:right;">100
+                            </td>
+                            <td style="text-align:right;">0
+                            </td>
+                            <td style="text-align:right;">0
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <img src="img/Supressed Submachineguns/Hud_kriss_vector.webp" alt="">
+                            </td>
+                            <td>KRISSVector
+                            </td>
+                            <td>Submachine gun, suppressed
+                            </td>
+                            <td style="background-color:#ADD8E6;color:#0c2026;">Rare
+                            </td>
+                            <td style="text-align:right;">250
+                            </td>
+                            <td style="text-align:right;">25
+                            </td>
+                            <td style="text-align:right;">845
+                            </td>
+                            <td style="text-align:right;">1
+                            </td>
+                            <td style="text-align:right;">0.82
+                            </td>
+                            <td style="text-align:right;">3.0
+                            </td>
+                            <td style="text-align:right;">0.42
+                            </td>
+                            <td style="text-align:right;">28.6
+                            </td>
+                            <td style="text-align:right;">44
+                            </td>
+                            <td style="text-align:right;">110
+                            </td>
+                            <td style="text-align:right;">0
+                            </td>
+                            <td style="text-align:right;">0.0001
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <img src="img/Supressed Submachineguns/Hud_honeybadger.webp" alt="">
+                            </td>
+                            <td>AACHoneyBadger
+                            </td>
+                            <td>Personal Defense Weapon,
+                                <p>3-round burst, suppressed
+                                </p>
+                            </td>
+                            <td style="background-color:#f2caea;"><a href="https://runningwithrifles.fandom.com/wiki/Boxes"
+                                    title="Boxes">Gift Box</a>
+                            </td>
+                            <td style="text-align:right;">390
+                            </td>
+                            <td style="text-align:right;">30
+                            </td>
+                            <td style="text-align:right;">800
+                            </td>
+                            <td style="text-align:right;">1
+                            </td>
+                            <td style="text-align:right;">0.38
+                            </td>
+                            <td style="text-align:right;">1.3
+                            </td>
+                            <td style="text-align:right;">0.45
+                            </td>
+                            <td style="text-align:right;">35.7
+                            </td>
+                            <td style="text-align:right;">54.6
+                            </td>
+                            <td style="text-align:right;">105
+                            </td>
+                            <td style="text-align:right;">-2
+                            </td>
+                            <td style="text-align:right;">0
+                                <p>(<a href="https://runningwithrifles.fandom.com/wiki/Boxes" title="Boxes">Purple and Titan
+                                        Boxes</a>)
+                                </p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <img src="img/Supressed Submachineguns/Hud_golden_mp5sd.webp" alt="">
+                            </td>
+                            <td>GoldenMP5SD
+                            </td>
+                            <td>Submachine gun, supressed, shiny
+                            </td>
+                            <td style="background-color:#f2caea;"><a href="https://runningwithrifles.fandom.com/wiki/Boxes"
+                                    title="Boxes">Gift Box</a>
+                            </td>
+                            <td style="text-align:right;">2500
+                            </td>
+                            <td style="text-align:right;">30
+                            </td>
+                            <td style="text-align:right;">652
+                            </td>
+                            <td style="text-align:right;">1
+                            </td>
+                            <td style="text-align:right;">0.7
+                            </td>
+                            <td style="text-align:right;">2.2
+                            </td>
+                            <td style="text-align:right;">0.4
+                            </td>
+                            <td style="text-align:right;">25.3
+                            </td>
+                            <td style="text-align:right;">41.8
+                            </td>
+                            <td style="text-align:right;">110
+                            </td>
+                            <td style="text-align:right;">-6
+                            </td>
+                            <td style="text-align:right;">0
+                                <p>(<a href="https://runningwithrifles.fandom.com/wiki/Boxes" title="Boxes">Community Box
+                                        6</a>)
+                                </p>
+                            </td>
+                        </tr>
+                        <!-- * assault Submachineguns -->
+    
+    
+                        <tr>
+                            <td>
+                                <img src="img/Supressed Submachineguns/Hud_p90.webp" alt="">
+                            </td>
+                            <td>P90
+                            </td>
+                            <td>Personal Defense Weapon
+                            </td>
+                            <td style="background-color:#ADD8E6;color:#0c2026;">Rare<b>/</b>Secret crate
+                            </td>
+                            <td style="text-align:right;">100
+                            </td>
+                            <td style="text-align:right;">50
+                            </td>
+                            <td style="text-align:right;">857
+                            </td>
+                            <td style="text-align:right;">1
+                            </td>
+                            <td style="text-align:right;">0.58
+                            </td>
+                            <td style="text-align:right;">3
+                            </td>
+                            <td style="text-align:right;">0.57
+                            </td>
+                            <td style="text-align:right;">32
+                            </td>
+                            <td style="text-align:right;">44
+                            </td>
+                            <td style="text-align:right;">100
+                            </td>
+                            <td style="text-align:right;">0
+                            </td>
+                            <td style="text-align:right;">0.0005
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <img src="img/Supressed Submachineguns/Hud_ump40.webp" alt="">
+                            </td>
+                            <td>UMP40
+                            </td>
+                            <td>Submachine gun
+                                <p>10% drop chance from elite paratrooper
+                                </p>
+                            </td>
+                            <td style="background-color:#AADDAA;color:#0b1b0b;">Greenbelts<b>/</b>
+                                <p>Non-unlockable
+                                </p>
+                            </td>
+                            <td style="text-align:right;">10
+                            </td>
+                            <td style="text-align:right;">30
+                            </td>
+                            <td style="text-align:right;">667
+                            </td>
+                            <td style="text-align:right;">1
+                            </td>
+                            <td style="text-align:right;">0.8
+                            </td>
+                            <td style="text-align:right;">2.4
+                            </td>
+                            <td style="text-align:right;">0.5
+                            </td>
+                            <td style="text-align:right;">33
+                            </td>
+                            <td style="text-align:right;">43
+                            </td>
+                            <td style="text-align:right;">100
+                            </td>
+                            <td style="text-align:right;">0
+                            </td>
+                            <td style="text-align:right;">0.00001
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <img src="img/Supressed Submachineguns/Hud_mx4_storm.webp" alt="">
+                            </td>
+                            <td>MX4Storm
+                            </td>
+                            <td>Submachine gun
+                                <p>10% drop chance from elite paratrooper
+                                </p>
+                            </td>
+                            <td style="background-color:#CCCCCC;color:#1b1b1b;">Graycollars<b>/</b>
+                                <p>Non-unlockable
+                                </p>
+                            </td>
+                            <td style="text-align:right;">10
+                            </td>
+                            <td style="text-align:right;">30
+                            </td>
+                            <td style="text-align:right;">952
+                            </td>
+                            <td style="text-align:right;">1
+                            </td>
+                            <td style="text-align:right;">0.5
+                            </td>
+                            <td style="text-align:right;">2
+                            </td>
+                            <td style="text-align:right;">0.5
+                            </td>
+                            <td style="text-align:right;">35
+                            </td>
+                            <td style="text-align:right;">41
+                            </td>
+                            <td style="text-align:right;">100
+                            </td>
+                            <td style="text-align:right;">0
+                            </td>
+                            <td style="text-align:right;">0.00001
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <img src="img/Supressed Submachineguns/Hud_bizon.webp" alt="">
+                            </td>
+                            <td>PP19Bizon
+                            </td>
+                            <td>Submachine gun
+                                <p>10% drop chance from elite paratrooper
+                                </p>
+                            </td>
+                            <td style="background-color:#f0d098;color:#332307;">Brownpants<b>/</b>
+                                <p>Non-unlockable
+                                </p>
+                            </td>
+                            <td style="text-align:right;">10
+                            </td>
+                            <td style="text-align:right;">64
+                            </td>
+                            <td style="text-align:right;">706
+                            </td>
+                            <td style="text-align:right;">1
+                            </td>
+                            <td style="text-align:right;">0.6
+                            </td>
+                            <td style="text-align:right;">2.2
+                            </td>
+                            <td style="text-align:right;">0.5
+                            </td>
+                            <td style="text-align:right;">28
+                            </td>
+                            <td style="text-align:right;">41
+                            </td>
+                            <td style="text-align:right;">100
+                            </td>
+                            <td style="text-align:right;">0
+                            </td>
+                            <td style="text-align:right;">0.00001
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <img src="img/Supressed Submachineguns/Hud_suomi.webp" alt="">
+                            </td>
+                            <td>Suomi
+                            </td>
+                            <td>Submachine gun, accurate while walking.
+                            </td>
+                            <td style="background-color:#f2caea;"><a href="/wiki/Boxes" title="Boxes">Gift Box</a>
+                            </td>
+                            <td style="text-align:right;">300
+                            </td>
+                            <td style="text-align:right;">71
+                            </td>
+                            <td style="text-align:right;">750
+                            </td>
+                            <td style="text-align:right;">0.9
+                            </td>
+                            <td style="text-align:right;">0.36
+                            </td>
+                            <td style="text-align:right;">3.0
+                            </td>
+                            <td style="text-align:right;">0.5
+                            </td>
+                            <td style="text-align:right;">30
+                            </td>
+                            <td style="text-align:right;">45
+                            </td>
+                            <td style="text-align:right;">100
+                            </td>
+                            <td style="text-align:right;">0
+                            </td>
+                            <td style="text-align:right;">0
+                                <p>(<a href="/wiki/Boxes" title="Boxes">Community Box 5</a>)
+                                </p>
+                            </td>
+                        </tr>
+    
+                        <tr>
+                            <td>
+                                <img src="img/Supressed Submachineguns/Hud_mpx.webp" alt="">
+                            </td>
+                            <td>MPX
+                            </td>
+                            <td>Submachine gun, optional magazine with hollow point bullets (hollow point stats in
+                                parenthesis)
+                            </td>
+                            <td style="background-color:#f2caea;"><a href="/wiki/Boxes" title="Boxes">Gift Box</a>
+                            </td>
+                            <td style="text-align:right;">300
+                            </td>
+                            <td style="text-align:right;">30
+                            </td>
+                            <td style="text-align:right;">822
+                            </td>
+                            <td style="text-align:right;">1
+                            </td>
+                            <td style="text-align:right;">0.33 (0.4)
+                            </td>
+                            <td style="text-align:right;">2.5
+                            </td>
+                            <td style="text-align:right;">0.5
+                            </td>
+                            <td style="text-align:right;">29.4 (28)
+                            </td>
+                            <td style="text-align:right;">37.8 (36)
+                            </td>
+                            <td style="text-align:right;">105 (100)
+                            </td>
+                            <td style="text-align:right;">0
+                            </td>
+                            <td style="text-align:right;">0
+                                <p>(<a href="/wiki/Boxes" title="Boxes">Community Box 7</a>)
+                                </p>
+                            </td>
+                        </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <footer>
+        <p>Made with <span>❤</span> by </p><a href="https://github.com/Xiang511/RWR_WiKi"><strong>@TOBY</strong></a>
+    </footer>
+    <a href="https://SiteStates.com" title="站長工具" style="display: none;">
+        <img src="https://SiteStates.com/show/image/33611.jpg" border="0" />
+    </a>
+</body>
+<script src="js/index.js"></script>
+
+</html>
