@@ -50,6 +50,11 @@
         <div class="vid">
             <img src="img/Running_with_Rifles_Logo.png" alt="">
         </div>
+        <script>
+            document.querySelector('.vid').addEventListener('animationend', function () {
+                this.style.display = 'none';
+            });
+        </script>
         <input type="checkbox" id="menu-switch">
         <header class="main-header">
             <div class="logo">
