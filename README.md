@@ -5,11 +5,11 @@ The original RWR wiki website's table design was not mobile-friendly. As a resul
 
 ## Changes
 
-### Responsive design: 
+### Responsive design
 
 The new website is responsive, which means that it will automatically adjust its layout to fit the screen size of the device being used. This makes it easier for users to view the website on smartphones and other small devices.
 
-### Mobile-friendly tables: 
+### Mobile-friendly tables
 
 The tables on the website have been redesigned to be more mobile-friendly. This includes using smaller fonts and making sure that the tables can be easily scrolled on a touchscreen device. Additionally, a fixed table header has been implemented to allow for smooth and continuous reading even when scrolling.
 
@@ -21,6 +21,10 @@ Currently supports ```basic sorting``` ,```pagination``` ,and```filtering``` .
 Using a ``` fixed table header ``` makes reading more smooth and efficient.
 
 ```Comparison tool:``` Now you can easily compare the stats of two guns side-by-side, without affecting the original search function.
+
+```Global Search:``` Now you can cross-reference information on different types of guns
+
+```Custom search boxes:``` Users can now customize the number of search boxes. ( maximum : 5)
 
 
 ## License
