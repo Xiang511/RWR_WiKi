@@ -341,3 +341,13 @@ footer strong {
         opacity: 0;
     }
 }
+
+.add-searchbar{
+    margin-top: 0.5em;
+    display: flex;
+    gap: 10px;
+}
+.add-searchbar .searchbar{
+    flex: 1;
+
+}
