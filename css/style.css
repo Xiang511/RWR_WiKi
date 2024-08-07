@@ -6,13 +6,15 @@
     font-family: 'Poppins', sans-serif;
     /* border: 0.1px solid #000; */
 }
-
+body{
+    background-color: #E2F0D9;
+}
 #menu-switch {
     display: none;
 }
 
 .main-header {
-    background-color: #292929;
+    background-color: #534a4a;
     padding: 10px;
     display: flex;
     justify-content: space-between;
@@ -215,7 +217,7 @@
 }
 
 .dtfc-fixed-left {
-    background: #fff;
+    background: #E2F0D9;
     z-index: 1;
 }
 
@@ -224,7 +226,7 @@
 }
 
 td {
-    border-bottom: 1px solid #ccc;
+    border-bottom: 1px solid #E2F0D9;
     padding-bottom: 0.3em;
 }
 
@@ -237,7 +239,7 @@ img {
 #myTable thead:nth-child(2) tr{
     position: sticky;
     top: 0 ;
-    background: #fff;
+    background: #E2F0D9;
     z-index: 3;
 }
 
