@@ -41,6 +41,57 @@ h2 {
     margin-top: 0.4em;
 }
 
+button {
+    background: none;
+    border: none;
+    padding: 0;
+    margin: 0;
+    font: inherit;
+    color: inherit;
+    cursor: pointer;
+}
+
+.website-link {
+    border: 1px solid #e5e7eb;
+    border-radius: .375rem;
+    padding: .4em .8em;
+    text-decoration: none;
+    color: #000;
+    transition: .2s;
+    margin: .4em .4em .4em 0;
+    display: inline-block;
+}
+
+a.website-link {
+    background-color: #000;
+    color: white;
+}
+
+.usage a.website-link:nth-child(2) {
+    background-color: #000;
+    color: #fff;
+}
+.usage a.website-link{
+    background-color: #fff;
+    color: black;
+}
+
+@media screen and (max-width:576px) {
+    .website-link {
+        display: block;
+        text-align: center;
+        margin-top: .8em;
+    }
+
+    button {
+        width: 100%;
+    }
+    .github-badge{
+        display: none;
+    }
+}
+
+
 .wrap {
     border: #e5e7eb 1px solid;
     border-radius: .375rem;
@@ -53,6 +104,7 @@ h2 {
     font-size: 2em !important;
 
 }
+
 .introduction p {
     font-weight: 600;
     font-size: 2em !important;
@@ -83,6 +135,9 @@ h2 {
 
 .usage {
     margin-top: 1.5em;
+    display: none;
+    transition: all 0.3s ease-in-out;
+    opacity: 0;
 }
 
 .usage p {

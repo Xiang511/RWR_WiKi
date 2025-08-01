@@ -1,3 +1,23 @@
+let Introduction = document.getElementById("Introduction");
+let IntroductionText =  document.querySelectorAll('.usage');
+Introduction.addEventListener("click", function() {
+    IntroductionText.forEach(function(text) {
+        if (text.style.display === "block") {
+            text.style.opacity = "0";
+            setTimeout(function() {
+                text.style.display = "none";
+            }, 500);
+        } else {
+            text.style.display = "block";
+            setTimeout(function() {
+                text.style.opacity = "1";
+            }, 10);
+        }
+    });
+});
+
+
+
 //即時查詢總人數
 const firstSpan = document.querySelector('.sitestatesJs');
 //取得字串
